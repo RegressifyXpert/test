@@ -10,6 +10,12 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: transparent; /* 设置选中时的背景色为透明 */
+    color: #000; /* 设置选中时的文字颜色为黑色 */
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
