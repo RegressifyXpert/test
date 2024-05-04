@@ -10866,6 +10866,6 @@ html {
 }
 
 .custom-link:hover {
-    color: blue; /* hover 時顏色變為藍色 */
+    color: #0080FF; /* hover 時顏色變為藍色 */
 }
 
