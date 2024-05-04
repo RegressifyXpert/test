@@ -11,8 +11,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-img {
-    width: 100%; /* 或者设置你想要的具体宽度值 */
+.my-custom-image {
+    width: 200px; /* 或者任何你想要的具体宽度值 */
     height: auto; /* 保持宽高比 */
 }
 
