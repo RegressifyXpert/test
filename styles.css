@@ -10,6 +10,12 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+img {
+    width: 100%; /* 或者设置你想要的具体宽度值 */
+    height: auto; /* 保持宽高比 */
+}
+
 .dropdown-item.active,
 .dropdown-item:active {
     background-color: transparent; /* 设置选中时的背景色为透明 */
