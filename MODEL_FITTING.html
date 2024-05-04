@@ -79,7 +79,7 @@
                                     <p class="fs-5 mb-2">在統計建模中，用於表示類別型變數的二元變數，通常用0和1表示不同類別。</p>
                                     <p class="fs-5 mb-2">[例]有一類別變數color中含有red, blue, yellow三種資料，利用虛擬變數轉換後得到三個連續變量color_red, color_blue, color_yellow，且當資料為紅色時，color_red=1, color_blue=0, color_yellow=0 ，以此類推。</p>
                                     <p class="fs-5 mb-3"><strong>5、殘差(residual): </strong></p>
-                                    <p class="fs-5 mb-2"></p>指實際觀測值和模型預測值之間的差異。
+                                    <p class="fs-5 mb-2">指實際觀測值和模型預測值之間的差異。</p>
                                     <p class="fs-5 mb-3"><strong>6、普通最小平方法 (OLS regression): </strong></p>
                                     <p class="fs-5 mb-2">一種迴歸分析的方法，用於建立自變數對應變數的線性關係，通常用於連續性變數；在OLS中，會試圖找到一條最佳擬合的直線或超平面，使得觀察到的數據點和此之間的殘差平方和最小。</p>
                                     <div class="fs-5 mb-4">
@@ -88,15 +88,24 @@
                                     <p class="fs-5 mb-3"><strong> 1、一階模型:</strong></p>
                                     <p class="fs-5 mb-2">此模型是最基本的線性回歸模型，包含了截距項和自變量的一次項，且其假設因變量（Y）與自變量（X）之間存在線性關係。</p>
                                     <div id="math-formula">
-                                        $$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \beta_{n+1} {X_1}^2 + \beta_{n+2} {X_2}^2 + \ldots + \beta_{2n} {X_n}^2 + \varepsilon $$
+                                       $$ Y = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\ldots + \\beta_n X_n + \\varepsilon $$
                                     </div>
                                     <p class="fs-5 mb-3"><strong>2、二階模型:</strong></p>
                                     <p class="fs-5 mb-2">此模型在基本線性回歸模型上擴展，添加了自變量的平方項。</p>
+                                    <div id="math-formula">
+                                        $$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \beta_{n+1} {X_1}^2 + \beta_{n+2} {X_2}^2 + \ldots + \beta_{2n} {X_n}^2 + \varepsilon $$
+                                    </div>
                                     <p class="fs-5 mb-3"><strong>3、一階交互作用模型: </strong></p>
                                     <p class="fs-5 mb-2">此模型擴展了一階線性回歸模型，包含了自變量的一次項以及它們之間的交互作用項。</p>
+                                    <div id="math-formula">
+                                        $$ Y = \\beta_0 + \\beta_1 X_1 + \\ldots + \\beta_n X_n + \\beta_{n+1} X_1 X_2 + \\beta_{n+2} X_1 X_3 + \\ldots  + \\varepsilon $$
+                                    </div>
                                     <p class="fs-5 mb-3"><strong>4、二階交互作用模型: </strong></p>
                                     <p class="fs-5 mb-2">此模型擴展了二階線性回歸模型，包含了自變量的一次項、二次項以及它們之間的交互作用項。</p>
                                     <p class="fs-5 mb-3"><strong>5、其他模型: </strong></p>
+                                    <div id="math-formula">
+                                        $$ Y = \\beta_0 + \\beta_1 X_1 + \\ldots + \\beta_n X_n + \\beta_{n+1} {X_1}^2 + \\ldots + \\beta_{2n} {X_n}^2 + \\beta_{2n+1} X_1 X_2 + \\beta_{2n+2} X_1 X_3 + \\ldots  +\\varepsilon $$
+                                    </div>
                                     <p class="fs-5 mb-2">可供使用者自主設計更多複雜的特徵和交互作用，而這些模型可能需要更多的參數來估計，並可能更難解釋。</p>
                                     <img class="img-fluid my-custom-image" src="photos/scatter.png" alt="..." />
                                 </section>
