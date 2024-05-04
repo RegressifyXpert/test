@@ -13,7 +13,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="styles.css" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,7 +29,7 @@
                                     <li><a class="dropdown-item" href="DATA_PREPROCESSING.html">資料預處理(DATA PREPROCESSING) </a></li>
                                     <li><a class="dropdown-item" href="DATA_VISUALIZATION.html">資料視覺化(DATA VISUALIZATION) </a></li>
                                     <li><a class="dropdown-item" href="MODEL_FITTING.html">模型配適(MODEL FITTING) </a></li>
-                                    <li><a class="dropdown-item" href="RESIDUAL.html">殘差(RESIDUAL)</a></li>
+                                    <li><a class="dropdown-item" href="RESIDUAL.html">殘差(RESIDUAL)</a></li>                                
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="統計推論.html">統計推論</a></li>
@@ -41,42 +41,99 @@
             <!-- Page Content-->
             <section class="py-5">
                 <div class="container px-5 my-5">
-                    <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Our Work</h1>
-                        <p class="lead fw-normal text-muted mb-0">Company portfolio</p>
-                    </div>
                     <div class="row gx-5">
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                        <div class="col-lg-3">
+                            <div class="d-flex align-items-center mt-lg-5 mb-4">
+                                <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                                <div class="ms-3">
+                                    <div class="fw-bold">Valerie Luna</div>
+                                    <div class="text-muted">News, Business</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-5 mb-lg-0">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
-                            </div>
+                        <div class="col-lg-9">
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 class="fw-bolder mb-1">專有名詞解析——殘差頁面</h1>
+                                    <!-- Post meta content-->
+                                    <div class="text-muted fst-italic mb-2">April 30, 2024</div>
+                                    <!-- Post categories-->
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                    <p class="fs-5 mb-3"><strong>1、類別型變數 (categorical variables): </strong></p>
+                                    <p class="fs-5 mb-3">描述資料中類別或群組的變數，例如性別、教育程度等；常見對應數據類型有物件（Object）、字符串（String）（STR）等。</p>
+                                    <p class="fs-5 mb-3"><strong>2、數值型變數 (numerical variable):</strong></p>
+                                    <p class="fs-5 mb-3">描述資料中數值的變數，例如年齡、收入等；常見對應數據類型有整數（Integer）（INT）、浮點數（Floating Point）（FLOAT）</p>
+                                    <p class="fs-5 mb-3"><strong>［常見問題］為什麼要轉換類別型變數為連續型？</strong></p>
+                                    <p class="fs-5 mb-3">此功能提供您若是需要查看某類別變數和其他數值型變數的散佈圖時，需進行轉換，且並不影響後續的模型配適。</p>
+                                    <p class="fs-5 mb-3"><strong>3、圓餅圖:</strong></p>
+                                    <p class="fs-5 mb-2">用於視覺化類別型變數的分布情況。</p>
+                                    <img class="img-fluid my-custom-image" src="photos/pie.png" alt="..." />
+                                    <p class="fs-5 mb-3"><strong>4、直方圖:</strong></p>
+                                    <p class="fs-5 mb-2">用於視覺化數值型變數的分布情況。</p>
+                                    <img class="img-fluid my-custom-image" src="photos/histo.png" alt="..." />
+                                    <p class="fs-5 mb-3"><strong>5、散佈圖(scatter plot):</strong></p>
+                                    <p class="fs-5 mb-2">用於視覺化兩個變數之間相互關係。</p>
+                                    <img class="img-fluid my-custom-image" src="photos/scatter.png" alt="..." />
+                                    <p class="fs-5 mb-3"><strong>6、散佈矩陣 (scatter matrix): </strong></p>
+                                    <p class="fs-5 mb-2">用於視覺化多個數值型變數之間相互關係的矩陣圖表。</p>
+                                    <img class="img-fluid my-custom-image" src="photos/scattermat.png" alt="..." />
+                                    <p class="fs-5 mb-3"><strong>7、相關矩陣 (correlation matrix): </strong></p>
+                                    <p class="fs-5 mb-2">顯示不同變數之間相關性的矩陣，通常是用相關係數表示。</p>
+                                    <img class="img-fluid my-custom-image" src="photos/cofmat.png" alt="..." />
+                                    <p class="fs-5 mb-3"><strong>8、皮爾森積動差相關係數(Pearson product-moment correlation coefficient): </strong></p>
+                                    <p class="fs-5 mb-2">測量兩變項間關聯的方向和程度的一個量化數值，其值坐落於-1至1之間。</p>
+                                    <img class="img-fluid my-custom-image" src="photos/pearson.png" alt="..." />
+                                </section>
+                            </article>
+                            <!-- Comments section-->
+                            <section>
+                                <div class="card bg-light">
+                                    <div class="card-body">
+                                        <!-- Comment form-->
+                                        <form class="mb-4"><textarea class="form-control" rows="3" placeholder="join the discussion and leave a comment!"></textarea></form>
+                                        <!-- Comment with nested comments-->
+                                        <div class="d-flex mb-4">
+                                            <!-- Parent comment-->
+                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                            <div class="ms-3">
+                                                <div class="fw-bold">Commenter Name</div>
+                                                If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
+                                                <!-- Child comment 1-->
+                                                <div class="d-flex mt-4">
+                                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                                    <div class="ms-3">
+                                                        <div class="fw-bold">Commenter Name</div>
+                                                        And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
+                                                    </div>
+                                                </div>
+                                                <!-- Child comment 2-->
+                                                <div class="d-flex mt-4">
+                                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                                    <div class="ms-3">
+                                                        <div class="fw-bold">Commenter Name</div>
+                                                        When you put money directly to a problem, it makes a good headline.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single comment-->
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                            <div class="ms-3">
+                                                <div class="fw-bold">Commenter Name</div>
+                                                When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-lg btn-primary" href="#!">Contact us</a>
                 </div>
             </section>
         </main>
