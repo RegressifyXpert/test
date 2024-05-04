@@ -12,7 +12,7 @@
  */
 
 .my-custom-image {
-    width: 200px; /* 或者任何你想要的具体宽度值 */
+    width: 400px; /* 或者任何你想要的具体宽度值 */
     height: auto; /* 保持宽高比 */
 }
 
