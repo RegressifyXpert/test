@@ -64,15 +64,14 @@
                                 </header>
                                 <!-- Post content-->
                                 <section class="mb-4">
-                                    <p class="fs-5 mb-3"><strong>迴歸必須滿足的四個假設：
-1.	線性關係
-2.	獨立性
-3.	常態性
-4.	同質變異性
- </strong></p>
-                                    <p class="fs-5 mb-3">描述資料中類別或群組的變數，例如性別、教育程度等；常見對應數據類型有物件（Object）、字符串（String）（STR）等。</p>
-                                    <p class="fs-5 mb-3"><strong>2、數值型變數 (numerical variable):</strong></p>
-                                    <p class="fs-5 mb-3">描述資料中數值的變數，例如年齡、收入等；常見對應數據類型有整數（Integer）（INT）、浮點數（Floating Point）（FLOAT）</p>
+                                    <p class="fs-5 mb-3"><strong>迴歸必須滿足的四個假設：1.	線性關係2.	獨立性3.	常態性4.	同質變異性 </strong></p>
+                                    <div class="fs-5 mb-4">
+                                        <h2 class="fw-bolder mb-1">關於違反假設的解決方法：</h2>
+                                    </div>
+        
+                                    <p class="fs-5 mb-3"><strong>1.	if 違反線性關係(以下特徵:非随机分布的残差, 離散度随预测值变化而变化, 有清晰的曲线或模式) (numerical variable):</strong></p>
+                                    <p class="fs-5 mb-3">解決方法：考慮增加自變數的多項式項目:(需要添加更多的特征来捕捉数据中的非线性关系。)，或者使用非線性迴歸模型 </p>
+                                   
                                     <p class="fs-5 mb-3"><strong>［常見問題］為什麼要轉換類別型變數為連續型？</strong></p>
                                     <p class="fs-5 mb-3">此功能提供您若是需要查看某類別變數和其他數值型變數的散佈圖時，需進行轉換，且並不影響後續的模型配適。</p>
                                     <p class="fs-5 mb-3"><strong>3、圓餅圖:</strong></p>
