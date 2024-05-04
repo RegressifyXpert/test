@@ -10858,3 +10858,14 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+
+.custom-link {
+    color: black; /* 初始顏色為黑色 */
+    text-decoration: none; /* 移除底線 */
+}
+
+.custom-link:hover {
+    color: blue; /* hover 時顏色變為藍色 */
+}
+
