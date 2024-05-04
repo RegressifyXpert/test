@@ -4310,7 +4310,7 @@ textarea.form-control-lg {
   }
   .card-group > .card {
     flex: 1 0 0%;
-    margin-bottom: 0;
+    margin-bottom: 50 rem;
   }
   .card-group > .card + .card {
     margin-left: 0;
@@ -10089,7 +10089,7 @@ textarea.form-control-lg {
     margin-right: auto !important;
   }
   .mb-xl-0 {
-    margin-bottom: 10rem !important;
+    margin-bottom: 0 !important;
   }
   .mb-xl-1 {
     margin-bottom: 0.25rem !important;
