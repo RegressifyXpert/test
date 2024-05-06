@@ -89,7 +89,7 @@
                                     <p class="fs-5 mb-3"><strong>1.	if 違反線性關係(以下特徵:非隨機分布的殘差, 離散度隨預測值變化而變化, 有清晰的曲線或模式) (numerical variable):</strong></p>
                                     <p class="fs-5 mb-3">解決方法：</p>
                                     <ol>
-                                        <li>考慮增加自變數的多項式項目:(需要添加更多的特征來捕捉數據中的非線性關系。)，或者使用非線性迴歸模型 </li>
+                                        <li>考慮增加自變數的多項式項目:需要添加更多的特征來捕捉數據中的非線性關系，或者使用非線性迴歸模型 </li>
                                     </ol>
                                     <p class="fs-5 mb-3"><strong>2.	if 違反獨立性</strong></p>
                                     <p class="fs-5 mb-3">解決方法：</p>
@@ -157,6 +157,7 @@
                                         <li>對應變數或自變數進行轉換，例如對數轉換</li>
                                         <li>使用異方差穩健迴歸方法來處理同質變異性的問題</li>
                                     </ol>
+                                    <p>三者盡量同時做到</p>
                                     
                                     <!--
                                     <p class="fs-5 mb-3">1.考慮增加自變數的多項式項目以處理線性假設的違反</p>
@@ -168,10 +169,39 @@
                                     <div class="fs-5 mb-4">
                                         <h2 class="fw-bolder mb-1">如果遇到非線性模型的話，可以有兩種解決方法</h2>
                                     </div>
-                                    <p class="fs-5 mb-3"><strong> 1.最近鄰迴歸分析 (KNN Regression)：</strong></p>
-                                    <p class="fs-5 mb-3"> 三者盡量同時做到</p>
-                                    <p class="fs-5 mb-3"> 三者盡量同時做到</p>
-                                    <p class="fs-5 mb-3"> 三者盡量同時做到</p>
+                                    
+                                    <p class="fs-5 mb-3"><strong>1.最近鄰迴歸分析 (KNN Regression)：建議在小於四種自變數的情況下使用</strong></p>
+                                    <p class="fs-5 mb-2">特性：</p>
+                                    <ul>
+                                        <li>根據鄰近觀測值的平均值來預測新的數值</li>
+                                    </ul>
+
+                                    <p class="fs-5 mb-3"><strong> 2.支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下</strong></p>
+                                    <p class="fs-5 mb-2">特性：</p>
+                                    <ul>
+                                        <li>適合處理高維度的數據</li>
+                                    </ul>
+                                    <p>以上只是在通常的情況下，實際情況下還需要視跑的各種資料來做調整</p>
+
+                                    <div class="fs-5 mb-4">
+                                        <h2 class="fw-bolder mb-1">通常用在二元分類的問題</h2>
+                                    </div>
+                                    
+                                    <p class="fs-5 mb-3"><strong>羅吉斯迴歸 (Logistic Regression)：通常用在四種到十種自變數的情況下</strong></p>
+                                    <p class="fs-5 mb-2">特性：</p>
+                                    <ul>
+                                        <li>會提供預測資料的準確性機率</li>
+                                    </ul>
+
+                                    <p class="fs-5 mb-3"><strong>貝氏估計 (Bayesian Estimation)：通常用在四種到十種自變數的情況下</strong></p>
+                                    <p class="fs-5 mb-2">特性：</p>
+                                    <ul>
+                                        <li>會提供預測資料的準確性機率</li>
+                                    </ul>
+
+
+
+                                    
 
                                         
                                 </section>
