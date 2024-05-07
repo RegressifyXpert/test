@@ -38,86 +38,26 @@
                     </div>
                 </div>
                 </nav>
-                            <div class="nav-containeri">
+                            <div class="navi-container">
                   <span class="navi-header">迴歸必須滿足的四個假設</span>
                   <div class="navi-item">
-                    <a href="#section-1" class="nav-link1" track-name="違反線性關係">違反線性關係</a>
+                    <a href="#section-1" class="navi-link" track-name="違反線性關係">違反線性關係</a>
                   </div>
                   <div class="navi-item">
-                    <a href="#section-2" class="nav-link1" track-name="違反獨立性">違反獨立性</a>
+                    <a href="#section-2" class="navi-link1" track-name="違反獨立性">違反獨立性</a>
                   </div>
                   <div class="navi-item">
-                    <a href="#section-3" class="nav-link1" track-name="違反常態性">違反常態性</a>
+                    <a href="#section-3" class="navi-link1" track-name="違反常態性">違反常態性</a>
                   </div>
                   <div class="navi-item">
-                    <a href="#section-4" class="nav-link1" track-name="違反同質變異性">違反同質變異性</a>
+                    <a href="#section-4" class="navi-link1" track-name="違反同質變異性">違反同質變異性</a>
                   </div>
                   <div class="navi-item">
-                    <a href="#section-5" class="nav-link1" track-name="多重共線性">多重共線性</a>
+                    <a href="#section-5" class="navi-link1" track-name="多重共線性">多重共線性</a>
                   </div>
                 </div>
                 
-                <div class="content-section">
-                  <h1>迴歸必須滿足的四個假設</h1>
-                
-                  <div id="section-1">
-                    <h2 class="section-title">違反線性關係</h2>
-                    <p>如果發現非隨機分布的殘差、離散度隨預測值變化或有清晰的曲線模式：</p>
-                    <ul>
-                      <li>考慮增加自變數的多項式項目：需要添加更多的特徵來捕捉數據中的非線性關係，或者使用非線性迴歸模型。</li>
-                    </ul>
-                  </div>
-                
-                  <div id="section-2">
-                    <h2 class="section-title">違反獨立性</h2>
-                    <ul>
-                      <li>將數據按照均值為0、標準差為1進行線性變換，使得數據具有相似的尺度和變異性。</li>
-                      <li>Normalization：將數據縮放到特定的範圍內，通常是[0, 1]或[-1, 1]，使得數據具有相似的尺度。</li>
-                      <li>Logarithmic Transformation：取對數可將數據分佈形狀調整，使其更加接近正態分佈。</li>
-                      <li>Power Transformation：進行冪次轉換（例如平方、立方、開方等），使數據更加符合正態分佈。</li>
-                      <li>Box-Cox 變換：透過估計 λ 參數確定進行何種程度的冪函數轉換，使數據更接近正態分佈。</li>
-                    </ul>
-                  </div>
-                
-                  <div id="section-3">
-                    <h2 class="section-title">違反常態性</h2>
-                    <p>若殘差分佈不符合常態分佈：</p>
-                    <ul>
-                      <li>考慮對殘差進行轉換，例如對數轉換、平方根轉換或 Box-Cox 變換。</li>
-                      <li>使用其他統計檢定方法來代替假設檢定。</li>
-                    </ul>
-                  </div>
-                
-                  <div id="section-4">
-                    <h2 class="section-title">違反同質變異性</h2>
-                    <ul>
-                      <li>使用異方差穩健迴歸的方法（先用 White Test 來檢定，然後再做 OLS 估計）。</li>
-                      <li>Variance Stabilizing Transformation：通過數據轉換（對數、平方根轉換等）使不同組的變異性更加接近。</li>
-                      <li>Weighted Analysis of Variance：使用加權方差分析方法，考慮不同組的變異性差異。</li>
-                    </ul>
-                  </div>
-                
-                  <div id="section-5">
-                    <h2 class="section-title">多重共線性</h2>
-                    <ul>
-                      <li>減少相關自變數的數量。</li>
-                      <li>使用主成分分析：將原始自變數轉換為一組無關的主成分，彼此之間不存在相關性。</li>
-                    </ul>
-                  </div>
-                </div>
-            <!-- Page Content-->
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-3">
-                            <div class="d-flex align-items-center mt-lg-5 mb-4">
-                                <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
-                                <div class="ms-3">
-                                    <div class="fw-bold">Valerie Luna</div>
-                                    <div class="text-muted">News, Business</div>
-                                </div>
-                            </div>
-                        </div>
+               
                         <div class="col-lg-9">
                             <!-- Post content-->
                             <article>
@@ -150,10 +90,10 @@
                                     -->
                                     
                                     <div class="fs-5 mb-4">
-                                        <h2 class="fw-bolder mb-1">關於違反假設的解決方法：</h2>
+                                        <h2 class="fw-bolder mb-1" id="section-1">關於違反假設的解決方法：</h2>
                                     </div>
         
-                                    <p class="fs-5 mb-3"><strong>1.	if 違反線性關係(以下特徵:非隨機分布的殘差, 離散度隨預測值變化而變化, 有清晰的曲線或模式) (numerical variable):</strong></p>
+                                    <p class="fs-5 mb-3" ><strong>1.	if 違反線性關係(以下特徵:非隨機分布的殘差, 離散度隨預測值變化而變化, 有清晰的曲線或模式) (numerical variable):</strong></p>
                                     <p class="fs-5 mb-3">解決方法：</p>
                                     <ol>
                                         <li>考慮增加自變數的多項式項目:需要添加更多的特征來捕捉數據中的非線性關系，或者使用非線性迴歸模型 </li>
