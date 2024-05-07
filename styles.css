@@ -10870,3 +10870,43 @@ html {
     color: #0080FF; /* hover 時顏色變為藍色 */
 }
 
+
+    .nav-container1 {
+      width: 250px;
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-right: 1px solid #ddd;
+    }
+    .nav-header1 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .nav-item1 {
+      margin-bottom: 10px;
+    }
+    .nav-link1 {
+      display: block;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: #333;
+      border-radius: 5px;
+      background-color: #eaeaea;
+      transition: background-color 0.3s;
+    }
+    .nav-link1:hover {
+      background-color: #ccc;
+    }
+    .nav-link1--active {
+      background-color: #ccc;
+      font-weight: bold;
+    }
+    .content-section1 {
+      margin-left: 270px;
+      padding: 15px;
+    }
+    .section-title1 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
