@@ -10871,21 +10871,21 @@ html {
 }
 
 
-    .nav-container1 {
+    .navi-container {
       width: 250px;
       background-color: #f1f1f1;
       padding: 15px;
       border-right: 1px solid #ddd;
     }
-    .nav-header1 {
+    .navi-header {
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 10px;
     }
-    .nav-item1 {
+    .navi-item {
       margin-bottom: 10px;
     }
-    .nav-link1 {
+    .navi-link {
       display: block;
       padding: 5px 10px;
       text-decoration: none;
@@ -10894,18 +10894,18 @@ html {
       background-color: #eaeaea;
       transition: background-color 0.3s;
     }
-    .nav-link1:hover {
+    .navi-link:hover {
       background-color: #ccc;
     }
-    .nav-link1--active {
+    .navi-link--active {
       background-color: #ccc;
       font-weight: bold;
     }
-    .content-section1 {
+    .content-section {
       margin-left: 270px;
       padding: 15px;
     }
-    .section-title1 {
+    .section-title {
       font-size: 20px;
       margin-top: 30px;
     }
