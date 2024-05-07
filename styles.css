@@ -10872,12 +10872,13 @@ html {
 
 
     .navi-container {
-      width: 100%;
+      width: 20%;
       background-color: #fff;
       padding: 15px;
       border-radius: 8px;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
       top: 20px;
+      position: fixed;
     }
     .navi-header {
       font-size: 18px;
