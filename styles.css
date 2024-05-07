@@ -10872,10 +10872,13 @@ html {
 
 
     .navi-container {
-      width: 250px;
-      background-color: #f1f1f1;
+      width: 100%;
+      background-color: #fff;
       padding: 15px;
-      border-right: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 20px;
     }
     .navi-header {
       font-size: 18px;
@@ -10896,6 +10899,11 @@ html {
     }
     .navi-link:hover {
       background-color: #ccc;
+    }
+    .navi-link:target {
+      font-weight: bold;
+      border-left: 4px solid #007bff;
+      background-color: #d9e7fd;
     }
     .navi-link--active {
       background-color: #ccc;
