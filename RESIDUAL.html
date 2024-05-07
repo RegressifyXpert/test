@@ -37,30 +37,31 @@
                         </ul>
                     </div>
                 </div>
-                            <div class="nav-container1">
-                  <span class="nav-header1">迴歸必須滿足的四個假設</span>
-                  <div class="nav-item1">
+                </nav>
+                            <div class="nav-containeri">
+                  <span class="navi-header">迴歸必須滿足的四個假設</span>
+                  <div class="navi-item">
                     <a href="#section-1" class="nav-link1" track-name="違反線性關係">違反線性關係</a>
                   </div>
-                  <div class="nav-item1">
+                  <div class="navi-item">
                     <a href="#section-2" class="nav-link1" track-name="違反獨立性">違反獨立性</a>
                   </div>
-                  <div class="nav-item1">
+                  <div class="navi-item">
                     <a href="#section-3" class="nav-link1" track-name="違反常態性">違反常態性</a>
                   </div>
-                  <div class="nav-item1">
+                  <div class="navi-item">
                     <a href="#section-4" class="nav-link1" track-name="違反同質變異性">違反同質變異性</a>
                   </div>
-                  <div class="nav-item1">
+                  <div class="navi-item">
                     <a href="#section-5" class="nav-link1" track-name="多重共線性">多重共線性</a>
                   </div>
                 </div>
                 
-                <div class="content-section1">
+                <div class="content-section">
                   <h1>迴歸必須滿足的四個假設</h1>
                 
                   <div id="section-1">
-                    <h2 class="section-title1">違反線性關係</h2>
+                    <h2 class="section-title">違反線性關係</h2>
                     <p>如果發現非隨機分布的殘差、離散度隨預測值變化或有清晰的曲線模式：</p>
                     <ul>
                       <li>考慮增加自變數的多項式項目：需要添加更多的特徵來捕捉數據中的非線性關係，或者使用非線性迴歸模型。</li>
@@ -68,7 +69,7 @@
                   </div>
                 
                   <div id="section-2">
-                    <h2 class="section-title1">違反獨立性</h2>
+                    <h2 class="section-title">違反獨立性</h2>
                     <ul>
                       <li>將數據按照均值為0、標準差為1進行線性變換，使得數據具有相似的尺度和變異性。</li>
                       <li>Normalization：將數據縮放到特定的範圍內，通常是[0, 1]或[-1, 1]，使得數據具有相似的尺度。</li>
@@ -79,7 +80,7 @@
                   </div>
                 
                   <div id="section-3">
-                    <h2 class="section-title1">違反常態性</h2>
+                    <h2 class="section-title">違反常態性</h2>
                     <p>若殘差分佈不符合常態分佈：</p>
                     <ul>
                       <li>考慮對殘差進行轉換，例如對數轉換、平方根轉換或 Box-Cox 變換。</li>
@@ -88,7 +89,7 @@
                   </div>
                 
                   <div id="section-4">
-                    <h2 class="section-title1">違反同質變異性</h2>
+                    <h2 class="section-title">違反同質變異性</h2>
                     <ul>
                       <li>使用異方差穩健迴歸的方法（先用 White Test 來檢定，然後再做 OLS 估計）。</li>
                       <li>Variance Stabilizing Transformation：通過數據轉換（對數、平方根轉換等）使不同組的變異性更加接近。</li>
@@ -97,15 +98,13 @@
                   </div>
                 
                   <div id="section-5">
-                    <h2 class="section-title1">多重共線性</h2>
+                    <h2 class="section-title">多重共線性</h2>
                     <ul>
                       <li>減少相關自變數的數量。</li>
                       <li>使用主成分分析：將原始自變數轉換為一組無關的主成分，彼此之間不存在相關性。</li>
                     </ul>
                   </div>
                 </div>
-
-            </nav>
             <!-- Page Content-->
             <section class="py-5">
                 <div class="container px-5 my-5">
