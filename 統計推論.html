@@ -61,7 +61,10 @@
                                     <a href="#section-2" class="navi-link" track-name="rsquare">(調整)R平方</a>
                                     </div>
                                     <div class="nav-item">
-                                    <a href="#section-3" class="navi-link" track-name="test">係數與模型檢定</a>
+                                    <a href="#section-3" class="navi-link" track-name="test">模型與係數的檢定</a>
+                                    </div>
+                                    <div class="nav-item">
+                                    <a href="#section-4" class="navi-link" track-name="test">信賴區間</a>
                                     </div>
                                 </div>
                             </div>
@@ -92,14 +95,28 @@
                                 <section class="mb-4" id=section-2>
                                     <p class="fs-5 mb-3"><strong>3、R<sup>2</sup> (R Square)：</strong></p>
                                     <p class="fs-5 mb-2">R平方是用來衡量模型對觀察到的變異量的解釋程度。白話來說，即配適出的模型能夠解釋目標變數（Y）變異的程度，且其值域在0~1之間，數字越大表示能夠解釋的變異程度越高；一般而言，大於0.7時會被認為有良好的解釋能力。</p>
-                                    <p class="fs-5 mb-3"><strong>3、調整的R<sup>2</sup> (R Square adjusted)：</strong></p>
+                                    <p class="fs-5 mb-3"><strong>4、調整的R<sup>2</sup> (R Square adjusted)：</strong></p>
                                     <p class="fs-5 mb-2">調整的R平方考慮了模型的自由度，即使用參數個數，它將對模型複雜性進行校正，因此當進行多變量的分析時更推薦使用。</p>
                                 </section>
                                 <section class="mb-4" id=section-3>
-                                    <p class="fs-5 mb-3"><strong>3、：</strong></p>
-                                    <p class="fs-5 mb-2">R平方是用來衡量模型對觀察到的變異量的解釋程度。白話來說，即配適出的模型能夠解釋目標變數（Y）變異的程度，且其值域在0~1之間，數字越大表示能夠解釋的變異程度越高；一般而言，大於0.7時會被認為有良好的解釋能力。</p>
-                                    <p class="fs-5 mb-3"><strong>3、調整的R<sup>2</sup> (R Square adjusted)：</strong></p>
-                                    <p class="fs-5 mb-2">調整的R平方考慮了模型的自由度，即使用參數個數，它將對模型複雜性進行校正，因此當進行多變量的分析時更推薦使用。</p>
+                                    <p class="fs-5 mb-3"><strong>5、迴歸模型的顯著性檢定(F test)：</strong></p>
+                                    <p class="fs-5 mb-2">探討迴歸模型中的β係數是否全部為0；當係數不為0時，迴歸模型才具有預測力。</p>
+                                    <p class="fs-5 mb-2">虛無假設(H0；Null hypothesis)→β1=β2=βn=0</p>
+                                    <p class="fs-5 mb-2">對立假說(Ha；alternative hypothesis)→至少有一個β不為0</p>
+                                    <p class="fs-5 mb-2">當顯著性p值<0.05，可拒絕虛無假說 → 此迴歸模型顯著，具有預測能力。</p>
+                                    <p class="fs-5 mb-3"><strong>6、個別迴歸係數的邊際檢定(t test)：</strong></p>
+                                    <p class="fs-5 mb-2">探討個別自變數之β係數是否為0；當係數不為0時，自變數才具有解釋力。</p>
+                                    <p class="fs-5 mb-2">虛無假設(H0；Null hypothesis)→βn=0</p>
+                                    <p class="fs-5 mb-2">對立假說(Ha；alternative hypothesis)→βn不為0</p>
+                                    <p class="fs-5 mb-2">當顯著性p值<0.05，可拒絕虛無假說 → 此係數顯著，具有解釋力。</p>
+                                    <p class="fs-5 mb-3"><strong>[小常識]</strong></p>
+                                    <p class="fs-5 mb-2">在簡單線性迴歸中(即只有一個X和Y)，F test和t test的統計意義相同。</p>
+                                </section>
+                                <section class="mb-4" id=section-3>
+                                    <p class="fs-5 mb-3"><strong>7、信賴區間 (CI；Confidence Interval)：</strong></p>
+                                    <p class="fs-5 mb-2">信賴區間是用來估計參數的範圍，通常用於評估參數估計的不確定性，並且大多使用95%信賴區間進行估計。</p>
+                                    <p class="fs-5 mb-2"><strong>[例]</strong></p>
+                                    
                                 </section>
                             </article>
                         </div>
