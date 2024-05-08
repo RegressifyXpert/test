@@ -11,6 +11,18 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+.nav-menu {
+  display: none; /* Initially hide the menu */
+}
+/* Style for the menu button */
+.menu-btn {
+  display: block; /* Display the button */
+}
+/* Style for the menu when it's expanded */
+.menu-expanded {
+  display: block; /* Display the menu */
+}
+
 .my-custom-image {
     width: 400px; /* 或者任何你想要的具体宽度值 */
     height: auto; /* 保持宽高比 */
