@@ -11,46 +11,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-    .menu-btn {
-        position: fixed;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        z-index: 9999; /* 確保導覽按鈕在最上層 */
-        display: none; /* 預設隱藏 */
-    }
-
-    /* Collapsible menu */
-    .nav-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 25%; /* 顯示在左邊四分之一 */
-        background-color: #f8f9fa; /* 可以自行設定背景顏色 */
-        z-index: 9998; /* 確保導覽在按鈕之下 */
-        overflow-y: auto; /* 若內容超過螢幕高度，顯示滾動條 */
-        padding: 20px; /* 調整內容間距 */
-        transition: transform 0.3s ease; /* 添加過渡效果 */
-        transform: translateX(-100%); /* 預設隱藏在左邊 */
-    }
-
-    /* 顯示導覽 */
-    .menu-expanded + .nav-menu {
-        transform: translateX(0); /* 顯示導覽 */
-    }
-
-    /* Media Query：手機螢幕 */
-    @media (max-width: 767px) {
-        .menu-btn {
-            display: block; /* 顯示導覽按鈕 */
-        }
-
-        .nav-menu {
-            width: 100%; /* 在手機中滿屏顯示 */
-        }
-    }
-
 .my-custom-image {
     width: 400px; /* 或者任何你想要的具体宽度值 */
     height: auto; /* 保持宽高比 */
