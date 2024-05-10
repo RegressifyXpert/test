@@ -187,14 +187,15 @@
                                          <ul>
                                             <li> 特徵：散佈圖呈現曲線趨勢，可能是向下凹的形狀。</li>
                                             <li> 建議應用場景：當數據呈現如下圖的二次曲線關係，適合選用二階模型。</li>
-                                             <img class="img-fluid my-custom-image" src="photos/#.png alt="..." />
+                                             <img class="img-fluid my-custom-image" src="photos/X2.png alt="..." />
                                         </ul>
                                 <p class="fs-5 mb-3"><strong> [常見問題]其他種二次函數不能使用二階模型嗎?</strong></p>
                                         <ul>
-                                            <li> 雖然會有一個誘導可以擬合一個高次多項式並得到較低的錯誤，但這可能會導致過擬合。你需要經常畫出關係圖來檢視擬合情況，並且專注於保證擬合合理，既沒有過擬合又沒有欠擬合。</li>
-                                             <img class="img-fluid my-custom-image" src="photos/overfitting.png" alt="..." />
-                                            <li> 明顯地應向兩端尋找曲線點，看看這些形狀和趨勢是否有意義；在本例中應選擇二次模型進行擬合，更高次的多項式最後可能產生怪異的推斷結果。</li>
-                                             <li>擬合模型的意圖是為了猜測母體參數，而非單單對於手上的資料進行一個完美的配適！</li>
+                                            <li> 不可以；但可以參考其他種對X的轉換方式去配適模型。</li>
+                                            <li> (1)若散佈圖呈現如下圖的曲線關係，可將變數X進行log function的轉換。</li>
+                                             <img class="img-fluid my-custom-image" src="photos/LOGX.png" alt="..." />
+                                            <li> (2)若散佈圖呈現如下圖的曲線關係，可將變數X進行倒數的轉換。</li>
+                                            <img class="img-fluid my-custom-image" src="photos/1X.png" alt="..." />
                                         </ul>
                                     <p class="fs-5 mb-3"><strong> 3、一階交互作用模型:</strong></p>
                                          <ul>
