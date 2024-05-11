@@ -60,16 +60,16 @@
                                                     <a href="#section-2" class="navi-link" track-name="補救措施">補救措施</a>
                                                     </div>
                                                         <div class="navi-item">
-                                                    <a href="#section-3" class="navi-link" track-name="四大假設">1、獨立性(Independence)不滿足</a>
+                                                    <a href="#section-3" class="navi-link" track-name="四大假設">1、獨立性不滿足</a>
                                                     </div>
                                                     <div class="nav-item">
-                                                    <a href="#section-4" class="navi-link" track-name="補救措施">2、線性關係(Linearity)不滿足</a>
+                                                    <a href="#section-4" class="navi-link" track-name="補救措施">2、線性關係不滿足</a>
                                                     </div>
                                                     <div class="navi-item">
-                                                    <a href="#section-5" class="navi-link" track-name="四大假設">3、同質變異性(Equal Variance)不滿足</a>
+                                                    <a href="#section-5" class="navi-link" track-name="四大假設">3、同質變異性不滿足</a>
                                                     </div>
                                                     <div class="nav-item">
-                                                    <a href="#section-6" class="navi-link" track-name="補救措施">4、常態性(Normality)不滿足</a>
+                                                    <a href="#section-6" class="navi-link" track-name="補救措施">4、常態性不滿足</a>
                                                     </div>
                                                     </div>
                                                 </div>
@@ -112,11 +112,15 @@
                                      <p class="fs-6 mb-3" >(1)當常態與同質變異性皆滿足時，可以對X<sub>i</sub>進行轉換，使模型滿足線性假設；如下圖：</p>
                                 <p class="fs-6 mb-2" >a. 當散佈圖呈現下圖曲線，可把X<sub>i</sub>轉換為X<sub>i</sub><sup>2</sup></p>
                                     <img class="img-fluid my-custom-image" src="photos/X22.png" alt="..." />
-                                    <p class="fs-6 mb-2" >b. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為log<sub>10X<sub>i</sub></p>
+                                    <p class="fs-6 mb-2" >b. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為log<sub>10</sub>X<sub>i</sub></p>
                                              <img class="img-fluid my-custom-image" src="photos/LOGX.png" alt="..." />
                                      <p class="fs-6 mb-2" >c. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為1/X<sub>i</sub></p>
                                             <img class="img-fluid my-custom-image" src="photos/1X.png" alt="..." />
-                                <p class="fs-6 mb-3" >(1)當常態與同質變異性皆滿足時，可以對X<sub>i</sub>進行轉換，使模型滿足線性假設；如下圖：</p>
+                                <p class="fs-5 mb-3" >(2)其他情況下遇到非線性模型的話，可以嘗試下列兩種解決方法：</p>
+                                     <p class="fs-6 mb-2" >a. 最近鄰迴歸分析 (KNN Regression)：根據鄰近觀測值的平均值來預測新的數值，建議在小於四種自變數的情況下使用。</p>
+                                    <img class="img-fluid my-custom-image" src="photos/X22.png" alt="..." />
+                                    <p class="fs-6 mb-2" >b. 支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下可以進行嘗試。</p>
+                                     <p class="fs-6 mb-2" ><strong>［註］</strong>以上只是在通常的情況下，實際情況下還需要視跑的各種資料來做調整。</p>
                                 <section class="mb-4" id=section-5>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>3、同質變異性(Equal Variance)不滿足</strong></p>
@@ -211,38 +215,6 @@
                                     <p class="fs-5 mb-3"> 三者盡量同時做到</p>
                                     -->
                                     
-                                    <div class="fs-5 mb-4">
-                                        <h2 class="fw-bolder mb-1">如果遇到非線性模型的話，可以有兩種解決方法</h2>
-                                    </div>
-                                    
-                                    <p class="fs-5 mb-3"><strong>1.最近鄰迴歸分析 (KNN Regression)：建議在小於四種自變數的情況下使用</strong></p>
-                                    <p class="fs-5 mb-2">特性：</p>
-                                    <ul>
-                                        <li>根據鄰近觀測值的平均值來預測新的數值</li>
-                                    </ul>
-
-                                    <p class="fs-5 mb-3"><strong> 2.支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下</strong></p>
-                                    <p class="fs-5 mb-2">特性：</p>
-                                    <ul>
-                                        <li>適合處理高維度的數據</li>
-                                    </ul>
-                                    <p>以上只是在通常的情況下，實際情況下還需要視跑的各種資料來做調整</p>
-
-                                    <div class="fs-5 mb-4">
-                                        <h2 class="fw-bolder mb-1">通常用在二元分類的問題</h2>
-                                    </div>
-                                    
-                                    <p class="fs-5 mb-3"><strong>羅吉斯迴歸 (Logistic Regression)：通常用在四種到十種自變數的情況下</strong></p>
-                                    <p class="fs-5 mb-2">特性：</p>
-                                    <ul>
-                                        <li>會提供預測資料的準確性機率</li>
-                                    </ul>
-
-                                    <p class="fs-5 mb-3"><strong>貝氏估計 (Bayesian Estimation)：通常用在四種到十種自變數的情況下</strong></p>
-                                    <p class="fs-5 mb-2">特性：</p>
-                                    <ul>
-                                        <li>會提供預測資料的準確性機率</li>
-                                    </ul>
 
                                     <p class="fs-5 mb-3"><strong>殘差圖可能違反的一些假設以及對應的特徵：</strong></p>
                                     <p class="fs-5 mb-3"><strong>1.同方差性假設（Homoscedasticity）：</strong></p>
