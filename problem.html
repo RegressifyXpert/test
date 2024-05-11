@@ -118,17 +118,19 @@
                                             <img class="img-fluid my-custom-image" src="photos/1X.png" alt="..." />
                                 <p class="fs-5 mb-3" >(2)其他情況下遇到非線性模型的話，可以嘗試下列兩種解決方法：</p>
                                      <p class="fs-6 mb-2" >a. 最近鄰迴歸分析 (KNN Regression)：根據鄰近觀測值的平均值來預測新的數值，建議在小於四種自變數的情況下使用。</p>
-                                    <img class="img-fluid my-custom-image" src="photos/X22.png" alt="..." />
-                                    <p class="fs-6 mb-2" >b. 支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下可以進行嘗試。</p>
+                                   　 <p class="fs-6 mb-2" >b. 支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下可以進行嘗試。</p>
                                      <p class="fs-6 mb-2" ><strong>［註］</strong>以上只是在通常的情況下，實際情況下還需要視跑的各種資料來做調整。</p>
                                 <section class="mb-4" id=section-5>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>3、同質變異性(Equal Variance)不滿足</strong></p>
-                                         <ul>
-                                            <li> 散佈圖特徵：適用任何形狀的散佈圖，使用者可根據數據特點和問題自行定義。</li>
-                                            <li> 建議應用場景：當數據無法簡單歸納為一階或二階模型時，使用者可根據自身領域知識與經驗自訂模型。</li>
-                                        </ul>
-                                <section class="mb-4" id=section-6>
+                                    <p class="fs-6 mb-3" ><strong>(1)加權最小平方法（Weighted Least Squares, WLS）</strong></p>
+                                <p class="fs-6 mb-2" >WLS通常用於處理異質變異性的情況，通過對觀測值進行加權，使得不同觀測值的變異性被納入考慮，從而獲得更準確的估計；其中常見的加權權數有．．．。</p>
+                                    <p class="fs-5 mb-3" >(2)異方差穩健迴歸（Heteroscedasticity Robust Regression）</p>
+                                     <p class="fs-6 mb-2" >首先，進行White檢定（White Test）來檢測異方差性，如果檢定結果顯示存在異方差，則使用異方差穩健的OLS估計來獲得穩健的迴歸係數估計值。</p>
+                                    <p class="fs-5 mb-3" >(3)變異數穩定轉換（Variance Stabilizing Transformation）</p>
+                                     <p class="fs-6 mb-2"> 通過數據轉換方法，如對數轉換、平方根轉換等，使不同組別的變異性更接近，從而滿足同質變異性的假設。</p>
+                                <p class="fs-6 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用WLS方法。如果WLS不適用或效果不佳，再嘗試其他轉換方式。</p>
+                                     <section class="mb-4" id=section-6>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>4、常態性(Normality)不滿足</strong></p>
                                          <ul>
