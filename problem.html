@@ -78,13 +78,10 @@
                                                     <a href="#section-8" class="navi-link" track-name="補救措施">6、線性和同質變異性不滿足</a>
                                                     </div>
                                                     <div class="nav-item">
-                                                    <a href="#section-8" class="navi-link" track-name="補救措施">其他問題</a>
+                                                    <a href="#section-8" class="navi-link" track-name="補救措施">(其他問題)離群值</a>
                                                     </div>
                                                     <div class="navi-item">
-                                                    <a href="#section-9" class="navi-link" track-name="四大假設">1、離群值</a>
-                                                    </div>
-                                                    <div class="nav-item">
-                                                    <a href="#section-10" class="navi-link" track-name="補救措施">2、多重共線性</a>
+                                                    <a href="#section-9" class="navi-link" track-name="四大假設">(其他問題)多重共線性</a>
                                                     </div>
                                                     </div>
                                                 </div>
@@ -168,64 +165,13 @@
                                      <p class="fs-5 mb-2" ><strong>［註］</strong>不能保證完全解決線性和同質變異性假設的違反；增加多項式項目可能會增加模型的複雜性，甚至發生多重共線性的問題。</p>
                                 <section class="mb-4" id=section-9>
                                 </section>
-                                  <div class="fs-5 mb-3">
-                                        <h2 class="fw-bolder mb-1" id="section-1">其他問題</h2>
-                                    </div>
-                                         <section class="mb-4" id=section-10>
-                                </section>
-                                    <p class="fs-5 mb-3" ><strong>1、離群值</strong></p>
+                                    <p class="fs-5 mb-3" ><strong>(其他問題)離群值</strong></p>
                                      <p class="fs-5 mb-2" >本研究中不主動採取移除離群值的方式，因為由於研究目的不同，離群值不一定是無用資料，但使用者可依自身經驗判定處理方式。</p>
-                                    <p class="fs-5 mb-3" ><strong>2、多重共線性</strong></p>
+                                    <p class="fs-5 mb-3" ><strong>(其他問題)多重共線性</strong></p>
                                      <p class="fs-5 mb-3" >(1)減少相關自變數的數量：</p>
                                     <p class="fs-5 mb-2" >當自變數之間存在高度相關性時，可以通過從模型中刪除一些自變數來減少共線性。通常會保留與目標變量高度相關的自變數，並移除與其他自變數相關性較高的那些。</p>
                                     <p class="fs-5 mb-3" ><strong>(2)使用主成分分析（PCA）</strong></p>
                                     <p class="fs-5 mb-2" >一種降維技術，可以將原始的自變數轉換為一組無關的主成分，這些主成分是原始變量的線性組合，彼此之間不存在相關性。然後，可以僅使用與目標變量高度相關的主成分作為模型的自變數，從而減輕多重共線性的問題。</p>
-
-                                    <p class="fs-5 mb-3"><strong>殘差圖可能違反的一些假設以及對應的特徵：</strong></p>
-                                    <p class="fs-5 mb-3"><strong>1.同方差性假設（Homoscedasticity）：</strong></p>
-                
-                                    <ul>
-                                        <li>殘差圖中殘差的方差應該在各個預測值或者自變數值的範圍內保持穩定。當殘差的方差隨著預測值或者自變數值的增大而增大或者減小時，就會違反同方差性假設。這可能表明模型存在異方差性，需要進行變換或者使用合適的模型。</li>
-                                    </ul>
-                                    
-                                    <p class="fs-5 mb-3"><strong>2.線性性假設（Linearity）：</strong></p>
-                                    <ul>
-                                        <li>殘差圖應該沒有明顯的趨勢或者模式，而應該呈現隨機的分佈。如果殘差圖中出現了明顯的非線性模式，可能表明模型對數據的擬合不夠好，需要考慮添加更多的特徵或者使用非線性模型。</li>
-                                    </ul>
-                                    <p class="fs-5 mb-3"><strong> 3.正態性假設（Normality）：</strong></p>
-                                    <ul>
-                                        <li>殘差應該呈現接近正態分佈的形態，即殘差圖中的點應該均勻地分佈在零點周圍，形成一條近似水平的直線。如果殘差圖中的點呈現明顯的偏離或者不規則的分佈，可能表明模型存在正態性假設的問題，需要進行變換或者使用合適的統計檢驗來確認。</li>
-                                    </ul>
-                                    <p class="fs-5 mb-3"><strong>4.	獨立性假設（Independence）：</strong></p>
-                                    <ul>
-                                        <li>殘差之間應該是獨立的，即殘差不應該呈現出時間序列相關性或者空間相關性。如果殘差圖中出現了明顯的自相關結構，可能表明模型存在獨立性假設的問題，需要進一步檢查和處理。
-
-</li>
-                                    </ul>
-                                    
-                                    <p class="fs-5 mb-3"><strong>QQ plot的判定</strong></p>
-
-                                    <p class="fs-5 mb-3"><strong>1.正態性假設（Normality）：</strong></p>
-                                    <p class="fs-5 mb-2">QQ 圖通常用於檢驗數據是否符合正態分佈。如果 QQ 圖偏離了直線，可能表明數據的分佈與正態分佈不符合。</p>
-                                    <p class="fs-5 mb-2">特徵包括:</p>
-                                    <ul>
-                                        <li>尾部偏差：QQ 圖尾部出現彎曲，可能表示數據分佈的尾部比正態分佈更厚或更薄。</li>
-                                        <li>中心偏差：QQ 圖中心部分的點偏離了直線，可能表示數據在中心區域與正態分佈有所不同。</li>
-                                       
-                                    </ul>
-                                    
-                                    <p class="fs-5 mb-3"><strong> 2.同方差性假設（Homoscedasticity）：</strong></p>
-                                    <p class="fs-5 mb-2">QQ 圖也可以用於檢驗數據的同方差性。如果 QQ 圖的點在一條直線附近均勻分佈，可能表明數據的同方差性得到了滿足。</p>
-                                    <p class="fs-5 mb-2">特徵包括:</p>
-                                    <ul>
-                                        <li>扇形模式：QQ 圖中點圍繞着中心線呈現出扇形，可能表示方差隨着變量值的變化而變化，違反了同方差性假設。</li>
-                                    </ul>
-                                    
-                                     <p class="fs-5 mb-3"><strong>3.獨立性假設（Independence）：</strong></p>
-                                     <p class="fs-5 mb-2">雖然 QQ 圖主要用於檢驗數據分佈的形態，但在某些情況下，它也可以提供數據間是否相互獨立的線索。如果 QQ 圖中點呈現出明顯的模式或趨勢，可能暗示數據間存在一定的相關性或時間序列結構。</p>
-                                     <p class="fs-5 mb-3"><strong>4.分佈假設：</strong></p>
-                                     <p class="fs-5 mb-2">QQ 圖還可以用於比較數據的分佈與其他理論分佈（如指數分佈、Weibull 分佈等）之間的一致性。當 QQ 圖與理論分佈的偏離超出預期範圍時，可能需要重新評估所選擇的分佈模。</p>                    
-                                </section>
                             </article>
                         </div>
                     </div>
