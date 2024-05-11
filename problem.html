@@ -110,34 +110,37 @@
                                 </section>
                                      <p class="fs-5 mb-3" ><strong>2、線性關係(Linearity)不滿足</strong></p>
                                      <p class="fs-5 mb-3" >(1)當常態與同質變異性皆滿足時，可以對X<sub>i</sub>進行轉換，使模型滿足線性假設。</p>
-                                <p class="fs-6 mb-2" >a. 當散佈圖呈現下圖曲線，可把X<sub>i</sub>轉換為X<sub>i</sub><sup>2</sup>。</p>
+                                <p class="fs-5 mb-2" >a. 當散佈圖呈現下圖曲線，可把X<sub>i</sub>轉換為X<sub>i</sub><sup>2</sup>。</p>
                                     <img class="img-fluid my-custom-image" src="photos/X22.png" alt="..." />
-                                    <p class="fs-6 mb-2" >b. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為log<sub>10</sub>X<sub>i</sub>。</p>
+                                    <p class="fs-5 mb-2" >b. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為log<sub>10</sub>X<sub>i</sub>。</p>
                                              <img class="img-fluid my-custom-image" src="photos/LOGX.png" alt="..." />
-                                     <p class="fs-6 mb-2" >c. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為1/X<sub>i</sub>。</p>
+                                     <p class="fs-5 mb-2" >c. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為1/X<sub>i</sub>。</p>
                                             <img class="img-fluid my-custom-image" src="photos/1X.png" alt="..." />
                                 <p class="fs-5 mb-3" >(2)其他情況下遇到非線性模型的話，可以嘗試下列兩種解決方法：</p>
                                      <p class="fs-6 mb-2" >a. 最近鄰迴歸分析 (KNN Regression)：根據鄰近觀測值的平均值來預測新的數值，建議在小於四種自變數的情況下使用。</p>
-                                   　 <p class="fs-6 mb-2" >b. 支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下可以進行嘗試。</p>
-                                     <p class="fs-6 mb-2" ><strong>［註］</strong>以上只是在通常的情況下，實際情況下還需要視跑的各種資料來做調整。</p>
+                                   　 <p class="fs-5 mb-2" >b. 支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下可以進行嘗試。</p>
+                                     <p class="fs-5 mb-2" ><strong>［註］</strong>以上只是在通常的情況下，實際情況下還需要視跑的各種資料來做調整。</p>
                                 <section class="mb-4" id=section-5>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>3、同質變異性(Equal Variance)不滿足</strong></p>
                                     <p class="fs-5 mb-3" ><strong>(1)加權最小平方法（Weighted Least Squares, WLS）</strong></p>
-                                <p class="fs-6 mb-2" >WLS通常用於處理異質變異性的情況，通過對觀測值進行加權，使得不同觀測值的變異性被納入考慮，從而獲得更準確的估計；其中常見的加權權數有．．．。</p>
+                                <p class="fs-5 mb-2" >WLS通常用於處理異質變異性的情況，通過對觀測值進行加權，使得不同觀測值的變異性被納入考慮，從而獲得更準確的估計；其中常見的加權權數有．．．。</p>
                                     <p class="fs-5 mb-3" >(2)異方差穩健迴歸（Heteroscedasticity Robust Regression）</p>
-                                     <p class="fs-6 mb-2" >使用異方差穩健的OLS估計來獲得穩健的迴歸係數估計值。此方法會根據異方差結構進行估計，從而獲得更可靠的結果。</p>
+                                     <p class="fs-5 mb-2" >使用異方差穩健的OLS估計來獲得穩健的迴歸係數估計值。此方法會根據異方差結構進行估計，從而獲得更可靠的結果。</p>
                                     <p class="fs-5 mb-3" >(3)變異數穩定轉換（Variance Stabilizing Transformation）</p>
-                                     <p class="fs-6 mb-2"> 通過數據轉換方法，如對數轉換、平方根轉換等，使不同組別的變異性更接近，從而滿足同質變異性的假設。</p>
-                                <p class="fs-6 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用WLS方法。如果WLS不適用或效果不佳，再嘗試其他轉換方式。</p>
+                                     <p class="fs-5 mb-2"> 通過數據轉換方法，如對數轉換、平方根轉換等，使不同組別的變異性更接近，從而滿足同質變異性的假設。</p>
+                                <p class="fs-5 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用WLS方法。如果WLS不適用或效果不佳，再嘗試其他轉換方式。</p>
                                      <section class="mb-4" id=section-6>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>4、常態性(Normality)不滿足</strong></p>
-                                    <p class="fs-5 mb-2" ><strong>(1)Bootstrap</strong></p>
-                                    <p class="fs-5 mb-2">解決方法：</p>
-                                    <ol>
-                                        <li>考慮增加自變數的多項式項目:需要添加更多的特征來捕捉數據中的非線性關系，或者使用非線性迴歸模型 </li>
-                                    </ol>
+                                    <p class="fs-5 mb-3" ><strong>(1)Bootstrap法：</strong></p>
+                                    <p class="fs-5 mb-2" >通過從原始數據中反覆抽樣來建立抽樣分佈，然後使用這些抽樣分佈來估計參數的標準誤和信賴區間。特別是在模型顯著的情況下，可以幫助處理非正態分佈、異方差、樣本大小不足等問題，使得參數估計更加穩健。</p>
+                                    <p class="fs-5 mb-3" ><strong>(2)Box-Cox轉換：</strong></p>
+                                    <p class="fs-5 mb-2" >通過引入一個參數λ，Box-Cox轉換可以將數據轉換成不同的形式，包括對數轉換、平方根轉換等，以使數據更符合常態分佈的假設。</p>
+                                    <p class="fs-5 mb-3" >(3)Robust Regression（魯棒迴歸）：</p>
+                                    <p class="fs-5 mb-2" >一種對抗數據中存在異常值或極端值的迴歸方法。與普通的OLS迴歸相比，魯棒迴歸對異常值的影響更加穩健，通常使用分位數回歸或者M-estimators等方法來實現。</p>
+                                    <p class="fs-5 mb-3" >(4)非參數方法：</p>
+                                    <p class="fs-5 mb-2" >不依賴於對數據分佈的具體假設，而是通過排列組合或者核密度估計等方法來進行估計；由於對數據的分佈做出較少的假設，因此在處理非正態數據時具有一定的優勢。</p>
                                     <p class="fs-5 mb-3"><strong>2.	if 違反獨立性</strong></p>
                                     <p class="fs-5 mb-3">解決方法：</p>
                                     <ol>
