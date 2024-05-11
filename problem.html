@@ -51,16 +51,30 @@
                                         <div class="col-lg-3">
                                                 <div class="ms-3">
                                                     <div class="navi-container">
-                                                    <span class="navi-header">資料預處理</span>
+                                                    <span class="navi-header">綱要</span>
                                                     <div class="navi-item">
-                                                    <a href="#section-1" class="navi-link" track-name="遺失值">遺失值</a>
+                                                    <a href="#section-1" class="navi-link" track-name="四大假設">四大假設</a>
                                                     </div>
                                                     <div class="nav-item">
-                                                    <a href="#section-2" class="navi-link" track-name="類別型變數">類別型變數</a>
+                                                    <a href="#section-2" class="navi-link" track-name="補救措施">補救措施</a>
+                                                    </div>
+                                                        <div class="navi-item">
+                                                    <a href="#section-3" class="navi-link" track-name="四大假設">1、獨立性(Independence)不滿足</a>
+                                                    </div>
+                                                    <div class="nav-item">
+                                                    <a href="#section-4" class="navi-link" track-name="補救措施">2、線性關係(Linearity)不滿足</a>
+                                                    </div>
+                                                    <div class="navi-item">
+                                                    <a href="#section-5" class="navi-link" track-name="四大假設">3、同質變異性(Equal Variance)不滿足</a>
+                                                    </div>
+                                                    <div class="nav-item">
+                                                    <a href="#section-6" class="navi-link" track-name="補救措施">4、常態性(Normality)不滿足</a>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                </div>
                         <div class="col-lg-9">
                             <!-- Post content-->
                             <article>
@@ -73,18 +87,51 @@
                                     <!-- Post categories-->
                                 </header>
                                 <!-- Post content-->
-                                <section class="mb-4">
-                                    <p class="fs-5 mb-3"><strong>迴歸分析中殘差必須滿足的四個假設： </strong></p>
-                                    <p class="fs-6 mb-4">獨立性(Independence)</p>
-                                    <p class="fs-6 mb-4">線性關係(Linearity)</p>
-                                    <p class="fs-6 mb-4">同質變異性(Equal Variance)</p>
-                                    <p class="fs-6 mb-4">常態性(Normality)</p>
-                                        
-                                    <div class="fs-5 mb-4">
-                                        <h2 class="fw-bolder mb-1" id="section-1">問題診斷</h2>
+                                <section class="mb-4" id=section1>
+                                    <p class="fs-5 mb-3"><strong>迴歸分析中標準誤差項 &varepsilon; 須滿足的四大假設： </strong></p>
+                                    <p class="fs-6 mb-2">1、獨立性(Independence)★★★★★</p>
+                                    <p class="fs-6 mb-2">2、線性關係(Linearity)★★★★☆</p>
+                                    <p class="fs-6 mb-2">3、同質變異性(Equal Variance)★★★☆☆</p>
+                                    <p class="fs-6 mb-2">4、常態性(Normality)★★★☆☆</p>
+                                </section>
+                                <section class="mb-4" id=section2>
+                                    </section>
+                                    <div class="fs-5 mb-3">
+                                        <h2 class="fw-bolder mb-1" id="section-1">補救措施</h2>
                                     </div>
-        
-                                    <p class="fs-5 mb-3" ><strong>1.	if 違反線性關係(以下特徵:非隨機分布的殘差, 離散度隨預測值變化而變化, 有清晰的曲線或模式) (numerical variable):</strong></p>
+                                <section class="mb-4" id=section3>
+                                </section>
+                                    <p class="fs-5 mb-3" ><strong>1、獨立性(Independence)不滿足</strong></p>
+                                         <ul>
+                                            <li> 散佈圖特徵：適用任何形狀的散佈圖，使用者可根據數據特點和問題自行定義。</li>
+                                            <li> 建議應用場景：當數據無法簡單歸納為一階或二階模型時，使用者可根據自身領域知識與經驗自訂模型。</li>
+                                        </ul> 
+                                <section class="mb-4" id=section4>  
+                                </section>
+                                     <p class="fs-5 mb-3" ><strong>2、線性關係(Linearity)不滿足</strong></p>
+                                     <p class="fs-6 mb-3" >(1)當常態與同質變異性皆滿足時，可以對X<sub>i</sub>進行轉換，使模型滿足線性假設；如下圖：</p>
+                                <p class="fs-6 mb-2" >a. 當散佈圖呈現下圖曲線，可把X<sub>i</sub>轉換為X<sub>i</sub><sup>2</sup></p>
+                                    <img class="img-fluid my-custom-image" src="photos/X22.png" alt="..." />
+                                    <p class="fs-6 mb-2" >b. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為log<sub>10X<sub>i</sub></p>
+                                             <img class="img-fluid my-custom-image" src="photos/LOGX.png" alt="..." />
+                                     <p class="fs-6 mb-2" >c. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為1/X<sub>i</sub></p>
+                                            <img class="img-fluid my-custom-image" src="photos/1X.png" alt="..." />
+                                <p class="fs-6 mb-3" >(1)當常態與同質變異性皆滿足時，可以對X<sub>i</sub>進行轉換，使模型滿足線性假設；如下圖：</p>
+                                <section class="mb-4" id=section5>
+                                </section>
+                                    <p class="fs-5 mb-3" ><strong>3、同質變異性(Equal Variance)不滿足</strong></p>
+                                         <ul>
+                                            <li> 散佈圖特徵：適用任何形狀的散佈圖，使用者可根據數據特點和問題自行定義。</li>
+                                            <li> 建議應用場景：當數據無法簡單歸納為一階或二階模型時，使用者可根據自身領域知識與經驗自訂模型。</li>
+                                        </ul>
+                                <section class="mb-4" id=section6>
+                                </section>
+                                    <p class="fs-5 mb-3" ><strong>4、常態性(Normality)不滿足</strong></p>
+                                         <ul>
+                                            <li> 散佈圖特徵：適用任何形狀的散佈圖，使用者可根據數據特點和問題自行定義。</li>
+                                            <li> 建議應用場景：當數據無法簡單歸納為一階或二階模型時，使用者可根據自身領域知識與經驗自訂模型。</li>
+                                        </ul>
+                                    <p class="fs-5 mb-3" >以下特徵:非隨機分布的殘差, 離散度隨預測值變化而變化, 有清晰的曲線或模式) (numerical variable):</strong></p>
                                     <p class="fs-5 mb-3">解決方法：</p>
                                     <ol>
                                         <li>考慮增加自變數的多項式項目:需要添加更多的特征來捕捉數據中的非線性關系，或者使用非線性迴歸模型 </li>
