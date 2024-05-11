@@ -126,7 +126,7 @@
                                     <p class="fs-6 mb-3" ><strong>(1)加權最小平方法（Weighted Least Squares, WLS）</strong></p>
                                 <p class="fs-6 mb-2" >WLS通常用於處理異質變異性的情況，通過對觀測值進行加權，使得不同觀測值的變異性被納入考慮，從而獲得更準確的估計；其中常見的加權權數有．．．。</p>
                                     <p class="fs-5 mb-3" >(2)異方差穩健迴歸（Heteroscedasticity Robust Regression）</p>
-                                     <p class="fs-6 mb-2" >首先，進行White檢定（White Test）來檢測異方差性，如果檢定結果顯示存在異方差，則使用異方差穩健的OLS估計來獲得穩健的迴歸係數估計值。</p>
+                                     <p class="fs-6 mb-2" >使用異方差穩健的OLS估計來獲得穩健的迴歸係數估計值。此方法會根據異方差結構進行估計，從而獲得更可靠的結果。</p>
                                     <p class="fs-5 mb-3" >(3)變異數穩定轉換（Variance Stabilizing Transformation）</p>
                                      <p class="fs-6 mb-2"> 通過數據轉換方法，如對數轉換、平方根轉換等，使不同組別的變異性更接近，從而滿足同質變異性的假設。</p>
                                 <p class="fs-6 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用WLS方法。如果WLS不適用或效果不佳，再嘗試其他轉換方式。</p>
@@ -158,21 +158,6 @@
                                     <p class="fs-5 mb-3">4.（Power Transformation）：將數據進行冪次轉換，例如平方、立方或開方等，可以調整數據的分佈形狀，使其更加符合正態分佈或者減少數據的異方差性 </p>
                                     <p class="fs-5 mb-3">5. Box-Cox變換：Box-Cox變換是一種廣泛應用的冪函數變換方法，通過估計一個參數λ來確定進行何種程度的冪函數轉換。Box-Cox變換可以使數據更加接近正態分佈。</p>
                                     -->
-                                    
-                                    <p class="fs-5 mb-3"><strong>3.	if 違反同質變異性</strong></p>
-                                    <p class="fs-5 mb-2">解決方法：</p>
-                                    <ol>
-                                        <li>可使用異方差穩健迴歸的方法（先用white test 來做假設檢定，然後再做OLS估計）</li>
-                                        <li>Variance Stabilizing Transformation：通過數據轉換，使得不同組的變異性更加接近。例如，對數轉換、平方根轉換等轉換方法可以穩定變異性，使其更符合同質變異性的假設。</li>
-                                        <li>Weighted Analysis of Variance：對於同質變異性的假設不成立的情況，可以使用加權方差分析方法，對不同組的變異性進行加權處理，以考慮不同組的變異性差異。</li>
-                                    </ol>
-                                    
-                                    <!--
-                                    <p class="fs-5 mb-3">1.	可使用異方差穩健迴歸的方法（先用white test 來做假設檢定，然後再做OLS估計）</p>
-                                    <p class="fs-5 mb-3">2.	（Variance Stabilizing Transformation）：通過數據轉換，使得不同組的變異性更加接近。例如，對數轉換、平方根轉換等轉換方法可以穩定變異性，使其更符合同質變異性的假設。</p>
-                                    <p class="fs-5 mb-3">3.	（Weighted Analysis of Variance）：對於同質變異性的假設不成立的情況，可以使用加權方差分析方法，對不同組的變異性進行加權處理，以考慮不同組的變異性差異。</p>
-                                    -->
-                                    
                                     <p class="fs-5 mb-3"><strong>4.	if 產生多重共線性的問題：</strong></p>
                                     <p class="fs-5 mb-2">解決方法：</p>
                                     <ol>
