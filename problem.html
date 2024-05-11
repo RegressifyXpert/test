@@ -109,14 +109,14 @@
                                 <section class="mb-4" id=section-4>  
                                 </section>
                                      <p class="fs-5 mb-3" ><strong>2、線性關係(Linearity)不滿足</strong></p>
-                                     <p class="fs-6 mb-3" >(1)當常態與同質變異性皆滿足時，可以對X<sub>i</sub>進行轉換，使模型滿足線性假設；如下圖：</p>
-                                <p class="fs-6 mb-2" >a. 當散佈圖呈現下圖曲線，可把X<sub>i</sub>轉換為X<sub>i</sub><sup>2</sup></p>
+                                     <p class="fs-6 mb-3" >(1)當常態與同質變異性皆滿足時，可以對X<sub>i</sub>進行轉換，使模型滿足線性假設。</p>
+                                <p class="fs-6 mb-2" >a. 當散佈圖呈現下圖曲線，可把X<sub>i</sub>轉換為X<sub>i</sub><sup>2</sup>。</p>
                                     <img class="img-fluid my-custom-image" src="photos/X22.png" alt="..." />
-                                    <p class="fs-6 mb-2" >b. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為log<sub>10</sub>X<sub>i</sub></p>
+                                    <p class="fs-6 mb-2" >b. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為log<sub>10</sub>X<sub>i</sub>。</p>
                                              <img class="img-fluid my-custom-image" src="photos/LOGX.png" alt="..." />
-                                     <p class="fs-6 mb-2" >c. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為1/X<sub>i</sub></p>
+                                     <p class="fs-6 mb-2" >c. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為1/X<sub>i</sub>。</p>
                                             <img class="img-fluid my-custom-image" src="photos/1X.png" alt="..." />
-                                <p class="fs-5 mb-3" >(2)其他情況下遇到非線性模型的話，可以嘗試下列兩種解決方法：</p>
+                                <p class="fs-6 mb-3" >(2)其他情況下遇到非線性模型的話，可以嘗試下列兩種解決方法：</p>
                                      <p class="fs-6 mb-2" >a. 最近鄰迴歸分析 (KNN Regression)：根據鄰近觀測值的平均值來預測新的數值，建議在小於四種自變數的情況下使用。</p>
                                    　 <p class="fs-6 mb-2" >b. 支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下可以進行嘗試。</p>
                                      <p class="fs-6 mb-2" ><strong>［註］</strong>以上只是在通常的情況下，實際情況下還需要視跑的各種資料來做調整。</p>
@@ -125,9 +125,9 @@
                                     <p class="fs-5 mb-3" ><strong>3、同質變異性(Equal Variance)不滿足</strong></p>
                                     <p class="fs-6 mb-3" ><strong>(1)加權最小平方法（Weighted Least Squares, WLS）</strong></p>
                                 <p class="fs-6 mb-2" >WLS通常用於處理異質變異性的情況，通過對觀測值進行加權，使得不同觀測值的變異性被納入考慮，從而獲得更準確的估計；其中常見的加權權數有．．．。</p>
-                                    <p class="fs-5 mb-3" >(2)異方差穩健迴歸（Heteroscedasticity Robust Regression）</p>
+                                    <p class="fs-6 mb-3" >(2)異方差穩健迴歸（Heteroscedasticity Robust Regression）</p>
                                      <p class="fs-6 mb-2" >使用異方差穩健的OLS估計來獲得穩健的迴歸係數估計值。此方法會根據異方差結構進行估計，從而獲得更可靠的結果。</p>
-                                    <p class="fs-5 mb-3" >(3)變異數穩定轉換（Variance Stabilizing Transformation）</p>
+                                    <p class="fs-6 mb-3" >(3)變異數穩定轉換（Variance Stabilizing Transformation）</p>
                                      <p class="fs-6 mb-2"> 通過數據轉換方法，如對數轉換、平方根轉換等，使不同組別的變異性更接近，從而滿足同質變異性的假設。</p>
                                 <p class="fs-6 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用WLS方法。如果WLS不適用或效果不佳，再嘗試其他轉換方式。</p>
                                      <section class="mb-4" id=section-6>
