@@ -99,9 +99,9 @@
                                 <p class="fs-5 mb-2" > 若分布對於residual=0非上下均勻分布且對稱，顯示資料可能有非線性趨勢。 </p>
                                 <img class="img-fluid my-custom-image" src="photos/linear.png" alt="..." />
                                 <p class="fs-5 mb-2" >(2)假設檢定法［利用 F-test lack of fit］ </p>
-                                <p class="fs-5 mb-2">虛無假設(H0；Null hypothesis)：X<sub>i</sub>和Y間存在線性關係</p>
-                                    <p class="fs-5 mb-2">對立假說(Ha；alternative hypothesis)：X<sub>i</sub>和Y間存在非線性關係</p>
-                                    <p class="fs-5 mb-2">當p值＞0.05 → 不拒絕虛無假設，滿足線性關係性假設。</p>
+                                <p class="fs-5 mb-2"Ｈ<sub>0</sub>：X<sub>i</sub>和Y間存在線性關係</p>
+                                    <p class="fs-5 mb-2">>Ｈ<sub>a</sub>：X<sub>i</sub>和Y間存在非線性關係</p>
+                                    <p class="fs-5 mb-2">當p值＞0.05 → 不拒絕虛無假設，因此推定滿足線性關係性假設。</p>
                                  <p class="fs-5 mb-2" ><strong>［註］</strong>若不滿足請詳見<strong>問題解決</strong>頁面。</p>
                                 <section class="mb-4" id=section-4>
                                     </section>
@@ -111,17 +111,18 @@
                                  <p class="fs-5 mb-2" >下圖中(a)(b)為符合同質變異性的殘差圖；(c)(d)為不符合同質變異性的殘差圖。</p>
                                 <img class="img-fluid my-custom-image" src="photos/var.png" alt="..." />
                                 <p class="fs-5 mb-2" >(2)假設檢定法［利用White test］ </p>
-                                <p class="fs-5 mb-2">虛無假設(H0；Null hypothesis)：Var(&varepsilon;)=&sigma;<sup>2</sup></p>
-                                <p class="fs-5 mb-2">對立假說(Ha；alternative hypothesis)：Var(&varepsilon;)&ne;&sigma;<sup>2</sup></p>
-                                <p class="fs-5 mb-2">當p值＞0.05 → 不拒絕虛無假設，滿足同質變異性假設。</p>
+                                <p class="fs-5 mb-2">Ｈ<sub>0</sub>：Var(&varepsilon;)=&sigma;<sup>2</sup></p>
+                                <p class="fs-5 mb-2">>Ｈ<sub>a</sub>：Var(&varepsilon;)&ne;&sigma;<sup>2</sup></p>
+                                <p class="fs-5 mb-2">當p值＞0.05 → 不拒絕虛無假設，因此推定滿足同質變異性假設。</p>
                                  <p class="fs-5 mb-2" ><strong>［註］</strong>若不滿足請詳見<strong>問題解決</strong>頁面。</p>
                                     <p class="fs-5 mb-3" ><strong>四、常態性(Normality)診斷</strong></p>
                                 <p class="fs-5 mb-2" >(1)圖片檢視法［看QQ plot, normal probability histogram］ </p>
                                 <p class="fs-5 mb-2" >［左圖］若residual偏離直線，顯示資料可能不服從常態分配。［右圖］可參考直方圖和常態分配曲線的相似性進行辨別。 </p>
                                  <img class="img-fluid my-custom-image" src="photos/nor.png" alt="..." />
                                 <p class="fs-5 mb-2" >(2)假設檢定法 </p>
-                                <p class="fs-5 mb-2">虛無假設(H0；Null hypothesis)：數據服從常態分佈</p>
-                                <p class="fs-5 mb-2">對立假說(Ha；alternative hypothesis)：數據不服從常態分佈</p>
+                                <p class="fs-5 mb-2">Ｈ<sub>0</sub>：數據服從常態分佈</p>
+                                <p class="fs-5 mb-2">>Ｈ<sub>a</sub>：數據不服從常態分佈</p>
+                                <p class="fs-5 mb-2">當p值＞0.05 → 不拒絕虛無假設，因此推定滿足常態性假設。</p>
                                 <p class="fs-5 mb-2" >a. Shapiro-Wilk test</p>
                                 <p class="fs-5 mb-2" >適用於小樣本資料（通常n ≤ 50）；基於樣本數據排序和最小平方法來計算統計量，再以理論上的常態分配期望值進行比較。 </p>
                                 <p class="fs-5 mb-2" >b. Kolmogorov-Smirnov test</p>
