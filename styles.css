@@ -10874,7 +10874,16 @@ html {
 @media screen and (max-width: 992px) {
     .navi-container {
       position: fixed;
-        width: 200px;
+      top: 0;
+    left: 0;
+    width: 100%; /* 讓導覽欄佔據整個視窗寬度 */
+    max-width: 200px; /* 限制導覽欄最大寬度 */
+    overflow-x: auto; /* 如果內容超過導覽欄寬度，可以水平滾動 */
+    background-color: #fff; /* 做一些背景色，便於查看 */
+  }
+
+  .content-section {
+    margin-top: 60px; /* 讓內容在導覽欄下面 */
     }
     .navi-header {
       font-size: 18px;
@@ -10906,9 +10915,19 @@ html {
       font-weight: bold;
     }
     .content-section {
-      margin-left: 270px;
       padding: 15px;
     }
+    @media screen and (min-width: 992px) {
+  .content-section {
+    margin-left: 270px; /* 大螢幕上的內容偏移 */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content-section {
+    margin-top: 60px; /* 導覽欄收縮後，讓內容在導覽欄下面 */
+  }
+}
     .section-title {
       font-size: 20px;
       margin-top: 30px;
