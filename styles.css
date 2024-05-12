@@ -10871,65 +10871,63 @@ html {
 }
 
 
-@media screen and (max-width: 992px) {
-    .navi-container {
-      position: fixed;
-      top: 0;
-    left: 0;
-    width: 100%; /* 讓導覽欄佔據整個視窗寬度 */
-    max-width: 200px; /* 限制導覽欄最大寬度 */
-    overflow-x: auto; /* 如果內容超過導覽欄寬度，可以水平滾動 */
-    background-color: #fff; /* 做一些背景色，便於查看 */
+
+@media screen and (max-width: 1024px) {
+  .navi-container {
+    position: fixed;
+    left: -200px; /* 預設將導覽欄收起，將其移出畫面 */
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4; /* 側邊欄的背景色 */
+    transition: left 0.3s; /* 添加過渡效果，使導覽欄的收起和展開更流暢 */
+  }
+  .navi-container.show {
+    left: 0; /* 展開導覽欄，將其移入畫面 */
   }
 
   .content-section {
     margin-top: 60px; /* 讓內容在導覽欄下面 */
-    }
-    .navi-header {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .navi-item {
-      margin-bottom: 10px;
-    }
-    .navi-link {
-      display: block;
-      padding: 5px 10px;
-      text-decoration: none;
-      color: #333;
-      border-radius: 5px;
-      background-color: #eaeaea;
-      transition: background-color 0.3s;
-    }
-    .navi-link:hover {
-      background-color: #ccc;
-    }
-    .navi-link:target {
-      font-weight: bold;
-      border-left: 4px solid #007bff;
-      background-color: #d9e7fd;
-    }
-    .navi-link--active {
-      background-color: #ccc;
-      font-weight: bold;
-    }
-    .content-section {
-      padding: 15px;
-    }
-    @media screen and (min-width: 992px) {
+    margin-left: 0; /* 調整內容區塊的左邊距，使其不被導覽欄遮擋 */
+    padding: 15px;
+  }
+
+  .navi-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .navi-item {
+    margin-bottom: 10px;
+  }
+  .navi-link {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    transition: background-color 0.3s;
+  }
+  .navi-link:hover {
+    background-color: #ccc;
+  }
+  .navi-link:target {
+    font-weight: bold;
+    border-left: 4px solid #007bff;
+    background-color: #d9e7fd;
+  }
+  .navi-link--active {
+    background-color: #ccc;
+    font-weight: bold;
+  }
   .content-section {
-    margin-left: 270px; /* 大螢幕上的內容偏移 */
+    margin-left: 270px;
+    padding: 15px;
+  }
+  .section-title {
+    font-size: 20px;
+    margin-top: 30px;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .content-section {
-    margin-top: 60px; /* 導覽欄收縮後，讓內容在導覽欄下面 */
-  }
-}
-    .section-title {
-      font-size: 20px;
-      margin-top: 30px;
-    }
 
