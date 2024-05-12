@@ -84,25 +84,25 @@
                                         <h2 class="fw-bolder mb-1">一、基本介紹</h2>
                                     </div>
                                     <p class="fs-5 mb-3"><strong>1、自變數 (independent variable): </strong></p>
-                                    <p class="fs-6 mb-2">在統計模型中，影響或解釋應變數變化的變數；即Ｘ值。</p>
+                                    <p class="fs-5 mb-2">在統計模型中，影響或解釋應變數變化的變數；即Ｘ值。</p>
                                     <p class="fs-5 mb-3"><strong>2、應變數 (dependent variable):  </strong></p>
-                                    <p class="fs-6 mb-2">在統計模型中，受自變數影響或解釋的變數，也稱為反應變數；即Ｙ值。</p>
+                                    <p class="fs-5 mb-2">在統計模型中，受自變數影響或解釋的變數，也稱為反應變數；即Ｙ值。</p>
                                     <p class="fs-5 mb-3"><strong>3、交互作用項 (interaction): </strong></p>
-                                    <p class="fs-6 mb-2">自變數之間相互影響的效應，即當一個自變數的效應受到另一個自變數的影響時。</p>
+                                    <p class="fs-5 mb-2">自變數之間相互影響的效應，即當一個自變數的效應受到另一個自變數的影響時。</p>
                                     <p class="fs-5 mb-3"><strong>4、虛擬變數 (dummy variable): </strong></p>
-                                    <p class="fs-6 mb-2">在統計建模中，用於表示類別型變數的二元變數，通常用0和1表示不同類別。</p>
-                                    <p class="fs-6 mb-2"><strong>[例]</strong>有一類別變數color中含有red, blue, yellow三種資料，利用虛擬變數轉換後得到兩個連續變量color_red, color_blue，且當資料為黃色時，color_red=0, color_blue=0 ，以此類推。</p>
+                                    <p class="fs-5 mb-2">在統計建模中，用於表示類別型變數的二元變數，通常用0和1表示不同類別。</p>
+                                    <p class="fs-5 mb-2"><strong>[例]</strong>有一類別變數color中含有red, blue, yellow三種資料，利用虛擬變數轉換後得到兩個連續變量color_red, color_blue，且當資料為黃色時，color_red=0, color_blue=0 ，以此類推。</p>
                                     <p class="fs-5 mb-3"><strong>5、殘差(residual): </strong></p>
-                                    <p class="fs-6 mb-2">指實際觀測值和模型預測值之間的差異。</p>
+                                    <p class="fs-5 mb-2">指實際觀測值和模型預測值之間的差異。</p>
                                      <section class="mb-4"  id=section-7>
                                     </section>
                                     <p class="fs-5 mb-3"><strong>6、普通最小平方法 (OLS regression): </strong></p>
-                                    <p class="fs-6 mb-2">一種迴歸分析的方法，用於建立自變數對應變數的線性關係，通常用於連續性變數；在OLS中，會試圖找到一條最佳擬合的直線或超平面，使得觀察到的數據點和此之間的殘差平方和最小。</p>
+                                    <p class="fs-5 mb-2">一種迴歸分析的方法，用於建立自變數對應變數的線性關係，通常用於連續性變數；在OLS中，會試圖找到一條最佳擬合的直線或超平面，使得觀察到的數據點和此之間的殘差平方和最小。</p>
                                     <div class="fs-5 mb-4">
                                     <h2 class="fw-bolder mb-1">二、常見模型介紹</h2>
                                     </div>
                                     <p class="fs-5 mb-3"><strong> 1、一階模型:</strong></p>
-                                    <div id="math-formula">
+                                    <div class="fs-5 mb-3" id="math-formula">
                                        $$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \varepsilon $$
                                         <p>
                                             其中
@@ -124,7 +124,7 @@
                                         <p>假設若不滿足可能需對資料進行轉換確保統計推論的可信度，請參閱"問題解決"頁面。</p>
                                     </div>
                                     <p class="fs-5 mb-3"><strong> 2、二階模型:</strong></p>                                
-                                    <div id="math-formula">
+                                    <div class="fs-5 mb-3" id="math-formula">
                                        $$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \beta_{n+1} {X_1}^2 + \beta_{n+2} {X_2}^2 + \ldots + \beta_{2n} {X_n}^2 + \varepsilon $$
                                         <p>
                                             其中
@@ -146,7 +146,7 @@
                                         <p>假設若不滿足可能需對資料進行轉換確保統計推論的可信度，請參閱"問題解決"頁面。</p>
                                     </div>                
                                 <p class="fs-5 mb-3"><strong>3、一階交互作用模型: </strong></p>
-                                    <div id="math-formula">
+                                    <div class="fs-5 mb-3" id="math-formula">
                                         <p>
                                             $$ Y = \beta_0 + \beta_1 X_1 + \ldots + \beta_n X_n + \beta_{n+1} X_1 X_2 + \beta_{n+2} X_1 X_3 + \ldots  + \varepsilon $$
                                         </p>
@@ -171,46 +171,46 @@
                                         <p>假設若不滿足可能需對資料進行轉換確保統計推論的可信度，請參閱"問題解決"頁面。</p>
                                     </div>
                                     <p class="fs-5 mb-3"><strong>4、自訂模型: </strong></p>
-                                    <p class="fs-6 mb-2">可供使用者自主設計所需的變數和交互作用，但這些模型可能需要更多的參數來估計，並可能更難解釋。</p>
+                                    <p class="fs-5 mb-2">可供使用者自主設計所需的變數和交互作用，但這些模型可能需要更多的參數來估計，並可能更難解釋。</p>
                                      <section class="mb-4"  id=section-13>
                                     </section>
-                                <div class="fs-5 mb-4">
+                                <div  class="fs-5 mb-4">
                                         <h2 class="fw-bolder mb-1">三、如何選擇模型</h2>
                                     </div>
                                     <p class="fs-5 mb-3"><strong> 1、一階模型:</strong></p>
-                                        <ul>
+                                        <ul class="fs-5 mb-3">
                                             <li> 特徵：散佈圖呈現線性趨勢，數據點大致分布在一條直線附近。</li>
                                             <li> 建議應用場景：當數據呈現簡單的線性關係，適合選用一階模型。</li>
                                             <img class="img-fluid my-custom-image" src="photos/plot1.png" alt="..." />
                                         </ul>
                                     <p class="fs-5 mb-3"><strong> 2、二階模型:</strong></p>
-                                         <ul>
+                                         <ul class="fs-5 mb-3">
                                             <li> 特徵：散佈圖呈現曲線趨勢，可能是向下凹的形狀。</li>
                                             <li> 建議應用場景：當數據呈現如下圖的二次曲線關係，適合選用二階模型。</li>
                                              <img class="img-fluid my-custom-image" src="photos/X22.png" alt="..." />
                                         </ul>
                                 <p class="fs-5 mb-3"><strong> [常見問題]其他種類的二次函數不能使用二階模型嗎?</strong></p>
-                                            <p class="fs-6 mb-3"> 不可以；但可以參考其他種類的X適合的轉換方式去配適模型。</p>
-                                            <p class="fs-6 mb-3"> (1)若散佈圖呈現如下圖的曲線關係，可將變數X進行log function的轉換。</p>
+                                            <p class="fs-5 mb-3"> 不可以；但可以參考其他種類的X適合的轉換方式去配適模型。</p>
+                                            <p class="fs-5 mb-3"> (1)若散佈圖呈現如下圖的曲線關係，可將變數X進行log function的轉換。</p>
                                              <img class="img-fluid my-custom-image" src="photos/LOGX.png" alt="..." />
-                                            <p class="fs-6 mb-3"> (2)若散佈圖呈現如下圖的曲線關係，可將變數X進行倒數的轉換。</p>
+                                            <p class="fs-5 mb-3"> (2)若散佈圖呈現如下圖的曲線關係，可將變數X進行倒數的轉換。</p>
                                             <img class="img-fluid my-custom-image" src="photos/1X.png" alt="..." />
                                     <p class="fs-5 mb-3"><strong> 3、一階交互作用模型:</strong></p>
-                                         <ul>
+                                         <ul class="fs-5 mb-3">
                                             <li> 特徵：散佈圖呈現在不同組別或條件下，不同變量之間的交叉影響關係。</li>
                                             <li> 建議應用場景：當數據中存在交互作用效應時，適合選用一階交互作用模型。</li>
                                          </ul>
-                                            <p class="fs-6 mb-2"><strong>[例]</strong>有一組觀測國高中和大學生每週玩電子遊戲的時間(Y)的資料，變數有學生年級(X1)、每週使用電子產品時間(X2)，透過變數意涵可推測X1有可能會影響X2，因此將考慮把交互作用項放入模型中進行配適。</p>
+                                            <p class="fs-5 mb-2"><strong>[例]</strong>有一組觀測國高中和大學生每週玩電子遊戲的時間(Y)的資料，變數有學生年級(X1)、每週使用電子產品時間(X2)，透過變數意涵可推測X1有可能會影響X2，因此將考慮把交互作用項放入模型中進行配適。</p>
                                     <p class="fs-5 mb-3"><strong> 4、自訂模型:</strong></p>
-                                         <ul>
+                                         <ul class="fs-5 mb-3">
                                             <li> 特徵：適用任何形狀的散佈圖，使用者可根據數據特點和問題自行定義。</li>
                                             <li> 建議應用場景：當數據無法簡單歸納為一階或二階模型時，使用者可根據自身領域知識與經驗自訂模型。</li>
                                         </ul>
                                     <p class="fs-5 mb-3"><strong> [常見問題]配適模型應該要'非常'擬合資料嗎?</strong></p>
-                                            <p class="fs-6 mb-2"> 雖然會有一個誘導可以擬合一個高次多項式並得到較低的錯誤，但這可能會導致過擬合。你需要經常畫出關係圖來檢視擬合情況，並且專注於保證擬合合理，既沒有過擬合又沒有欠擬合。</p>
+                                            <p class="fs-5 mb-2"> 雖然會有一個誘導可以擬合一個高次多項式並得到較低的錯誤，但這可能會導致過擬合。你需要經常畫出關係圖來檢視擬合情況，並且專注於保證擬合合理，既沒有過擬合又沒有欠擬合。</p>
                                              <img class="img-fluid my-custom-image" src="photos/overfitting.png" alt="..." />
-                                            <p class="fs-6 mb-2">明顯地應向兩端尋找曲線點，看看這些形狀和趨勢是否有意義；在本例中應選擇二次模型進行擬合，更高次的多項式最後可能產生怪異的推斷結果。</p>
-                                            <p class="fs-6 mb-2">擬合模型的意圖是為了猜測母體參數，而非單單對於手上的資料進行一個完美的配適！</p>
+                                            <p class="fs-5 mb-2">明顯地應向兩端尋找曲線點，看看這些形狀和趨勢是否有意義；在本例中應選擇二次模型進行擬合，更高次的多項式最後可能產生怪異的推斷結果。</p>
+                                            <p class="fs-5 mb-2">擬合模型的意圖是為了猜測母體參數，而非單單對於手上的資料進行一個完美的配適！</p>
                                 </section>
                             </article>
                         </div>
