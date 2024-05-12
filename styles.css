@@ -10871,8 +10871,10 @@ html {
 }
 
 
+@media screen and (max-width: 992px) {
     .navi-container {
       position: fixed;
+        width: 200px;
     }
     .navi-header {
       font-size: 18px;
