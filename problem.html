@@ -149,9 +149,9 @@
                                     <p class="fs-5 mb-2" >通過從原始數據中反覆抽樣來建立抽樣分佈，然後使用這些抽樣分佈來估計參數的標準誤和信賴區間。特別是在模型顯著的情況下，可以幫助處理非正態分佈、異方差、樣本大小不足等問題，使得參數估計更加穩健。</p>
                                     <p class="fs-5 mb-3" ><strong>(2)Box-Cox轉換：</strong></p>
                                     <p class="fs-5 mb-2" >通過引入一個參數λ，Box-Cox轉換可以將數據轉換成不同的形式，包括對數轉換、平方根轉換等，以使數據更符合常態分佈的假設。</p>
-                                     <p class="fs-5 mb-2" >下圖顯示了利用 Box-Cox 轉換後的數據分佈。原始數據呈現了偏斜或者不符合常態分佈的特徵，通過 Box-Cox 轉換，我們將數據轉換成了一個更接近常態分佈的形式。</p>
-                                     <img class="img-fluid my-custom-image" src="photos/bcox.png" alt="..." style="width: 200%; height: auto; />
-                                    <p class="fs-5 mb-3" >(3)Robust Regression（魯棒迴歸）：</p>
+                                     <img class="img-fluid my-custom-image" src="photos/bcox.png" alt="..." style="width: 150%; height: auto; />
+                                    <p class="fs-5 mb-3" >上圖顯示了利用 Box-Cox 轉換後的數據分佈。原始數據呈現了偏斜或者不符合常態分佈的特徵，通過 Box-Cox 轉換，我們將數據轉換成了一個更接近常態分佈的形式。</p>
+                                    <p class="fs-5 mb-4" >(3)Robust Regression（魯棒迴歸）：</p>
                                     <p class="fs-5 mb-2" >一種對抗數據中存在異常值或極端值的迴歸方法。與普通的OLS迴歸相比，魯棒迴歸對異常值的影響更加穩健，通常使用分位數回歸或者M-estimators等方法來實現。</p>
                                     <p class="fs-5 mb-3" >(4)非參數方法：</p>
                                     <p class="fs-5 mb-2" >不依賴於對數據分佈的具體假設，而是通過排列組合或者核密度估計等方法來進行估計；由於對數據的分佈做出較少的假設，因此在處理非正態數據時具有一定的優勢。</p>
