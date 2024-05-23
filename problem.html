@@ -29,7 +29,7 @@
                                     <li><a class="dropdown-item" href="DATA_PREPROCESSING.html">資料預處理(DATA PREPROCESSING) </a></li>
                                     <li><a class="dropdown-item" href="DATA_VISUALIZATION.html">資料視覺化(DATA VISUALIZATION) </a></li>
                                     <li><a class="dropdown-item" href="MODEL_FITTING.html">模型配適(MODEL FITTING) </a></li>
-                                    <li><a class="dropdown-item" href="RESIDUAL.html">殘差(RESIDUAL)</a></li>                                
+                                    <li><a class="dropdown-item" href="RESIDUAL.html">殘差診斷(RESIDUAL DIAGNOSIS)</a></li>                                
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="problem.html">問題解決</a></li>
@@ -122,10 +122,8 @@
                                 <section class="mb-4" id=section-3>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>1、獨立性(Independence)不滿足</strong></p>
-                                     <p class="fs-5 mb-3" >(1)調整模型：調整模型以納入可能遺漏的變數，以減少可能導致獨立性不滿足的潛在因素。</p>
-                                     <p class="fs-5 mb-3" >(2)使用羅吉斯迴歸或其他分類模型：如果是分類問題且獨立性不滿足，可以考慮使用羅吉斯迴歸或其他分類模型，這些模型對於獨立性要求不像OLS那麼嚴格。</p>
-                                    <p class="fs-5 mb-3" >(3)時間序列資料的差分：如果資料是時間序列資料，而且存在自相關（autocorrelation），可以考慮對資料進行差分，使之更加平穩。</p>
-                                     <p class="fs-5 mb-3" >(4)檢查模型中的共線性：如果模型中存在共線性（collinearity），則可能導致獨立性不滿足。可以使用變異膨脹因子（Variance Inflation Factor, VIF）等方法來檢查共線性，並且考慮去除其中一些變數。</p>
+                                     <p class="fs-5 mb-3" >(1)調整模型：調整模型以納入和應變量有相關但遺漏的變數，以減少可能導致獨立性不滿足的因素。</p>
+                                     <p class="fs-5 mb-3" >(2)時間序列資料的差分：如果資料是時間序列資料，而且存在自相關（autocorrelation），可以考慮對資料進行差分，使之更加平穩。</p>
                                 <section class="mb-4" id=section-4>  
                                 </section>
                                      <p class="fs-5 mb-3" ><strong>2、線性關係(Linearity)不滿足</strong></p>
@@ -137,9 +135,9 @@
                                      <p class="fs-5 mb-2" >c. 當散佈圖呈現下圖曲線，可把</sub>X<sub>i</sub>轉換為1/X<sub>i</sub>。</p>
                                             <img class="img-fluid my-custom-image" src="photos/1X.png" alt="..." />
                                 <p class="fs-5 mb-3" >(2)其他情況下遇到非線性模型的話，可以嘗試下列兩種解決方法：</p>
-                                     <p class="fs-5 mb-2" >a. 最近鄰迴歸分析 (KNN Regression)：根據鄰近觀測值的平均值來預測新的數值，建議在小於四種自變數的情況下使用。</p>
-                                   　 <p class="fs-5 mb-2" >b. 支援向量機 (Support Vector Machine, SVM)：通常用在超過十種自變數的高維度的情況下可以進行嘗試。</p>
-                                     <p class="fs-5 mb-2" ><strong>［註］</strong>以上只是在通常的情況下，實際情況下還需要視跑的各種資料來做調整。</p>
+                                     <p class="fs-5 mb-2" >a. 最近鄰迴歸分析 (KNN Regression)：根據鄰近觀測值的平均值來預測新的數值，建議在維度較低（自變數較少）的情況下使用。</p>
+                                   　 <p class="fs-5 mb-2" >b. 支援向量機 (Support Vector Machine, SVM)：通常用在高維度的情況下可以進行嘗試。</p>
+                                     <p class="fs-5 mb-2" ><strong>［註］</strong>以上只是在通常的情況下，實際情況下還需要視資料型態來做調整。</p>
                                 <section class="mb-4" id=section-5>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>3、同質變異性(Equal Variance)不滿足</strong></p>
@@ -149,7 +147,7 @@
                                      <p class="fs-5 mb-2" >使用異方差穩健的OLS估計來獲得穩健的迴歸係數估計值。此方法會根據異方差結構進行估計，從而獲得更可靠的結果。</p>
                                     <p class="fs-5 mb-3" >(3)變異數穩定轉換（Variance Stabilizing Transformation）</p>
                                      <p class="fs-5 mb-2"> 通過數據轉換方法，如對數轉換、平方根轉換等，使不同組別的變異性更接近，從而滿足同質變異性的假設。</p>
-                                <p class="fs-5 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用WLS方法。如果WLS不適用或效果不佳，再嘗試其他轉換方式。</p>
+                                <p class="fs-5 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用本產品提供的WLS方法。如果WLS不適用或效果不佳，再嘗試其他轉換方式。</p>
                                      <section class="mb-4" id=section-6>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>4、常態性(Normality)不滿足</strong></p>
@@ -158,8 +156,8 @@
                                     <p class="fs-5 mb-3" ><strong>(2)Box-Cox轉換：</strong></p>
                                     <p class="fs-5 mb-2" >通過引入一個參數λ，Box-Cox轉換可以將數據轉換成不同的形式，包括對數轉換、平方根轉換等，以使數據更符合常態分佈的假設。</p>
                                      <img class="img-fluid my-custom-image" src="photos/bcox1.png" alt="..." style="width: 150%; height: auto; />
-                                    <p class="fs-5 mb-3" ></p>
-                                    <p class="fs-5 mb-4" >(3)Robust Regression（魯棒迴歸）：</p>
+                                    <p class="fs-5 mb-3" ><strong>［註］</strong>Box-COX轉換也有可能可以解決同質變異的問題。</p>
+                                    <p class="fs-5 mb-4" >(3)穩健迴歸（Robust Regression）：</p>
                                     <p class="fs-5 mb-2" >一種對抗數據中存在異常值或極端值的迴歸方法。與普通的OLS迴歸相比，魯棒迴歸對異常值的影響更加穩健，通常使用分位數回歸或者M-estimators等方法來實現。</p>
                                     <p class="fs-5 mb-3" >(4)非參數方法：</p>
                                     <p class="fs-5 mb-2" >不依賴於對數據分佈的具體假設，而是通過排列組合或者核密度估計等方法來進行估計；由於對數據的分佈做出較少的假設，因此在處理非正態數據時具有一定的優勢。</p>
