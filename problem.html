@@ -122,7 +122,7 @@
                                 <section class="mb-4" id=section-3>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>1、獨立性(Independence)不滿足</strong></p>
-                                     <p class="fs-5 mb-3" >(1)嘗試調整模型：納入和應變量有相關但遺漏的變數，或考慮增加自變數的多項式項目（可能會導致模型複雜度增加），以減少可能導致獨立性不滿足的因素。</p>
+                                     <p class="fs-5 mb-3" >(1)嘗試調整模型：納入和應變量有相關但遺漏的變數，以減少可能導致獨立性不滿足的因素。</p>
                                      <p class="fs-5 mb-3" >(2)時間序列資料的差分：當資料是時間序列資料且存在自相關（autocorrelation），可以考慮對資料進行差分，使之更加平穩。</p>
                                 <section class="mb-4" id=section-4>  
                                 </section>
@@ -142,25 +142,22 @@
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>3、同質變異性(Equal Variance)不滿足</strong></p>
                                     <p class="fs-5 mb-3" ><strong>(1)加權最小平方法（Weighted Least Squares, WLS）</strong></p>
-                                <p class="fs-5 mb-2" >WLS通常用於處理異質變異性的情況，通過對觀測值進行加權，使得不同觀測值的變異性被納入考慮，從而獲得更準確的估計；其中常見的加權權數有殘差絕對值與殘差平方。</p>
-                                    <p class="fs-5 mb-3" >(2)異方差穩健迴歸（Heteroscedasticity Robust Regression）</p>
-                                     <p class="fs-5 mb-2" >使用異方差穩健的OLS估計來獲得穩健的迴歸係數估計值。此方法會根據異方差結構進行估計，從而獲得更可靠的結果。</p>
-                                    <p class="fs-5 mb-3" >(3)變異數穩定轉換（Variance Stabilizing Transformation）</p>
-                                     <p class="fs-5 mb-2"> 通過數據轉換方法，如對數轉換、平方根轉換等，使不同組別的變異性更接近，從而滿足同質變異性的假設。</p>
-                                <p class="fs-5 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用本產品提供的WLS方法。如果WLS不適用或效果不佳，再嘗試其他轉換方式。</p>
-                                     <section class="mb-4" id=section-6>
+                                    <p class="fs-5 mb-2" >WLS通常用於處理異質變異性的情況，通過對觀測值進行加權，使得不同觀測值的變異性被納入考慮，從而獲得更準確的估計；其中常見的加權權數有殘差絕對值與殘差平方。</p>
+                                    <p class="fs-5 mb-3" ><strong>(2)Box-Cox轉換：</strong></p>
+                                    <p class="fs-5 mb-2" >在極大化概似函數的目標下 通過引入一個參數λ，Box-Cox轉換可以將數據轉換成不同的形式，包括對數轉換、平方根轉換等，使殘差更符合同質變異及常態分配的假設。</p>
+                                    <p class="fs-5 mb-2" ><strong>［註］</strong>在違反同質變異性時，請優先考慮使用WLS方法。</p>
+                                    <section class="mb-4" id=section-6>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>4、常態性(Normality)不滿足</strong></p>
                                     <p class="fs-5 mb-3" ><strong>(1)Bootstrap法：</strong></p>
                                     <p class="fs-5 mb-2" >通過從原始數據中反覆抽樣來建立抽樣分佈，然後使用這些抽樣分佈來估計參數的標準誤和信賴區間。特別是在模型顯著的情況下，可以幫助處理非正態分佈、異方差、樣本大小不足等問題，使得參數估計更加穩健。</p>
                                     <p class="fs-5 mb-3" ><strong>(2)Box-Cox轉換：</strong></p>
-                                    <p class="fs-5 mb-2" >通過引入一個參數λ，Box-Cox轉換可以將數據轉換成不同的形式，包括對數轉換、平方根轉換等，以使數據更符合常態分佈的假設。</p>
-                                     <img class="img-fluid my-custom-image" src="photos/bcox1.png" alt="..." style="width: 150%; height: auto; />
-                                    <p class="fs-5 mb-3" ><strong>［註］</strong>Box-COX轉換也有可能可以解決同質變異的問題。</p>
+                                    <p class="fs-5 mb-2" >在極大化概似函數的目標下 通過引入一個參數λ，Box-Cox轉換可以將數據轉換成不同的形式，包括對數轉換、平方根轉換等，使殘差更符合同質變異及常態分配的假設。</p>
+                                    <img class="img-fluid my-custom-image" src="photos/bcox1.png" alt="..." style="width: 150%; height: auto; />
                                     <p class="fs-5 mb-4" >(3)穩健迴歸（Robust Regression）：</p>
-                                    <p class="fs-5 mb-2" >一種對抗數據中存在異常值或極端值的迴歸方法。與普通的OLS迴歸相比，魯棒迴歸對異常值的影響更加穩健，通常使用分位數回歸或者M-estimators等方法來實現。</p>
+                                    <p class="fs-5 mb-2" >一種對抗數據中存在異常值或極端值的迴歸方法。與普通的OLS迴歸相比，穩健迴歸對異常值的影響更加穩健，通常使用分位數回歸或者M-estimators等方法來實現。</p>
                                     <p class="fs-5 mb-3" >(4)非參數方法：</p>
-                                    <p class="fs-5 mb-2" >不依賴於對數據分佈的具體假設，而是通過排列組合或者核密度估計等方法來進行估計；由於對數據的分佈做出較少的假設，因此在處理非正態數據時具有一定的優勢。</p>
+                                    <p class="fs-5 mb-2" >不依賴於對數據分佈的具體假設，而是通過排列組合或者核密度估計等方法來進行估計；由於對數據的分佈做出較少的假設，因此在處理非常態數據時具有一定的優勢。</p>
                                      <section class="mb-4" id=section-7>
                                 </section>
                                     <p class="fs-5 mb-3" ><strong>5、線性和常態性不滿足</strong></p>
