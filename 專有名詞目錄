@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>RegressifyXpert</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="photos/statistics.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">RegressifyXpert</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="EXAMPLE.html">釋例</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown專有名詞解析" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">專有名詞介紹</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown專有名詞解析">
+                                    <li><a class="dropdown-item" href="DATA_PREPROCESSING.html">資料預處理(DATA PREPROCESSING) </a></li>
+                                    <li><a class="dropdown-item" href="DATA_VISUALIZATION.html">資料視覺化(DATA VISUALIZATION) </a></li>
+                                    <li><a class="dropdown-item" href="MODEL_FITTING.html">模型配適(MODEL FITTING) </a></li>
+                                    <li><a class="dropdown-item" href="RESIDUAL.html">殘差診斷(RESIDUAL DIAGNOSIS)</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="problem.html">問題解決</a></li>
+                           <li class="nav-item"><a class="nav-link" href="統計推論.html">統計推論</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown關於我們" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">關於我們</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown關於我們">
+                                    <li><a class="dropdown-item" href="aboutus.html">團隊成員</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">聯絡我們</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 class="fw-bolder mb-1">專有名詞目錄</h1>
+                                    <!-- Post meta content-->
+                                    <div class="text-muted fst-italic mb-2">April 30, 2024</div>
+                                    <!-- Post categories-->
+                                </header>
+                                <!-- Post content-->
+                                       <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .box {
+            width: 30%;
+            margin: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid gray;
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <div class="title">資料預處理</div>
+        <table>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+        </table>
+    </div>
+    <div class="box">
+        <div class="title">資料視覺化</div>
+        <table>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+        </table>
+    </div>
+    <div class="box">
+        <div class="title">模型配適</div>
+        <table>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="container">
+    <div class="box">
+        <div class="title">問題診斷</div>
+        <table>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+        </table>
+    </div>
+    <div class="box">
+        <div class="title">問題解決</div>
+        <table>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+        </table>
+    </div>
+    <div class="box">
+        <div class="title">統計推論</div>
+        <table>
+            <tr><td></td></tr><tr><td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+        </table>
+    </div>
+</div>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">RegressifyXpert</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small"  href="contact.html">聯絡我們</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+                        
+                                    
